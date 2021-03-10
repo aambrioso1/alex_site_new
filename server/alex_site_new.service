@@ -1,5 +1,5 @@
 [Unit]
-Description=uWSGI Alex_Site server instance
+Description=uWSGI alex_site_new server instance
 After=syslog.target
 
 [Service]
