@@ -9,8 +9,10 @@ app = Flask(__name__)
 moment = Moment(app)
 bootstrap = Bootstrap(app)
 
+"""
 # This configuration will make the app less hackable.
 app.config["ADMIN_PASSWORD"] = os.environ.get("ADMIN_PASSWORD")
+"""
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -24,14 +26,16 @@ def internal_server_error(e):
 def index():
     return render_template('index.html')
 
-
+"""
 @app.route('/about')
 def about():
 	return render_template('about.html')
+"""
 
 @app.route('/blog')
 def blog():
 	return render_template('blog.html')
+	# return '<html><a href="http://alexambrioso.com">Go to Alex's Blog</a></html>'
 
 @app.route('/desmos')
 def desmos():
