@@ -5,7 +5,7 @@ import os
 
 
 app = Flask(__name__)
-moment = Moment(app)
+# moment = Moment(app)
 bootstrap = Bootstrap(app)
 
 """
