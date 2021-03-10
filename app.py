@@ -1,7 +1,6 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
-from flask_moment import Moment
 import os
 
 
