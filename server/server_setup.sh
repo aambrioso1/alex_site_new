@@ -57,11 +57,11 @@ cd cd /apps/alex_site/
 pip install -r requirements.txt
 
 # Copy and enable the daemon
-cp /apps/alex_site/server/alex_site.service /etc/systemd/system/alex_site.service
+cp /apps/alex_site_new/server/alex_site_new.service /etc/systemd/system/alex_site_new.service
 
-systemctl start alex_site
-systemctl status alex_site
-systemctl enable alex_site
+systemctl start alex_site_new
+systemctl status alex_site_new
+systemctl enable alex_site_new
 
 # Setup the public facing server (NGINX)
 apt install nginx
@@ -69,7 +69,7 @@ apt install nginx
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /apps/alex_site/server/alex_site.nginx /etc/nginx/sites-enabled/alex_site.nginx
+cp /apps/alex_site_new/server/alex_site_new.nginx /etc/nginx/sites-enabled/alex_site_new.nginx
 update-rc.d nginx enable
 service nginx restart
 
