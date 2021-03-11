@@ -4,7 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Alex's Website{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="/static/css/site.css" />
 </head>
 
 {% block navbar %}
