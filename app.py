@@ -2,6 +2,10 @@ from flask import Flask, render_template, jsonify, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
 import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "..", "..")))
 
 
 app = Flask(__name__)
