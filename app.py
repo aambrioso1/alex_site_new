@@ -31,10 +31,12 @@ def about():
 	return render_template('about.html')
 """
 
+"""
 @app.route('/blog')
 def blog():
 	return render_template('blog.html')
 	# return '<html><a href="http://alexambrioso.com">Go to Alex's Blog</a></html>'
+"""
 
 @app.route('/desmos')
 def desmos():

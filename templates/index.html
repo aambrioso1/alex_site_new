@@ -5,11 +5,25 @@
 {% block page_content %}
 
 <container>
-	<img src="{{ url_for('static', filename='first_algorithm.jpg') }}" width="200" />
-	<div class="myProfile">
+	<table>
+	<tr>
+		<td  width="500">
+		<div class="myProfile">
+	 
 	    <p>
 	    	I am a Mathematics professor at Hillsborough Community College in Tampa, Florida. My interests include mathematics, computer science, music, running, and reading.
 	    </p>
 	</div>
+		</td>
+	<td>
+	<figure align = "right">
+		<img src="{{ url_for('static', filename='first_algorithm.jpg') }}" width="150" />
+		<figcaption align = "center">Ada Lovelace's Algorithm</figcaption>
+	</figure>
+	</td>
+	</tr>
+	</table>
+
+
 </container>
 {% endblock %}
