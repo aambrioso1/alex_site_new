@@ -20,9 +20,10 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template('500.html'), 500
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
-    return render_template('index.html')
+	image_file = url_for('static', filename='img/first_algorithm.jpg')
+	return render_template('index.html', image_file = image_file)
 
 """
 @app.route('/about')
