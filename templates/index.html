@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/alex_site_new.css') }}" />
+{% block title %}Index{% endblock %}
+
 
 {% block page_content %}
 
@@ -11,15 +12,15 @@
 		<div class="myProfile">
 	 
 	    <p>
-	    	Welcome to my website.  I am a Mathematics professor at Hillsborough Community College in Tampa, Florida. My interests include mathematics, computer science, music, running, and reading.
+	    	Welcome to my website. &nbsp I am a Mathematics professor at Hillsborough Community College in Tampa, Florida. &nbsp My interests include mathematics, computer science, music, running, and reading.
 	    </p>
-	    <p>email:   aambrioso1@gmail.com</p>
-		<p>GitHub: https://github.com/aambrioso1</p>
-	</div>
+	    
+
+		</div>
 		</td>
-	<td>
-	<figure align = "right">
-    	<a href="https://upload.wikimedia.org/wikipedia/commons/c/cf/">
+	<td align='center'>
+	<figure>
+    	<a href="https://en.wikipedia.org/wiki/Ada_Lovelace">
     		<img alt="first_algorithm" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg" width="300" height="140">
     	</a>
 
@@ -28,10 +29,16 @@
 		<figcaption align = "center">Ada Lovelace's Algorithm</figcaption>
 	-->
 	</figure>
+	Ada Lovelace's Algorithm
 	</td>
 	</tr>
 	</table>
-
-
-</container>
+	</container>
+	<container>
+			Contact Info
+			<br>
+			<a href="mailto:aambrioso1@gmail.com">email</a>
+			<br>
+			<a href="https://github.com/aambrioso1">github</a>
+	</container>
 {% endblock %}
