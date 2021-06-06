@@ -91,14 +91,16 @@ apt install nginx
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
+# Check nginx.py to see that server_name is correct.
+
 cp /apps/alex_site_new/server/alex_site_new.nginx /etc/nginx/sites-enabled/alex_site_new.nginx
-update-rc.d nginx enable
+update-rc.d nginx enable # 
 service nginx restart
 
 
 # Optionally add SSL support via Let's Encrypt:
 # https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
-
+# Should choose redirect to https
 add-apt-repository ppa:certbot/certbot
 apt install python-certbot-nginx
 certbot --nginx -d fakepypi.talkpython.com
