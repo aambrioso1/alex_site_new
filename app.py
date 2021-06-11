@@ -46,6 +46,41 @@ def desmos():
 def projects():
 	return render_template('projects.html')
 
+# Hockey API added to the site	
+import requests, json
+
+url = 'https://statsapi.web.nhl.com/api/v1/teams/' # URL for team data provided by the NHL
+response = requests.get(url)
+response.raise_for_status() # Verifies that we get a good response.
+
+# Load json data into a Python variable.
+data = json.loads(response.text)
+
+# This creates a dictionary, new_teams_dict[int_id] = 'team_name', using the online API.
+teams_dict = dict()
+for i in range(1, len(data['teams'])+1):
+	teams_dict[i] = data['teams'][i-1]['name']
+
+
+@app.route('/API')
+def API():
+	return '<h1>Alex\'s Hockey API<h1></br> \
+		Check if a team is in the NHL as follows:</br></br> \
+		base_url/is_a_team/team_name</br></br> \
+		Note the team name should be capitalized.</br> \
+		For example:  Tampa Bay Lightning.'
+
+@app.route('/API/is_a_team/<name>')
+def user(name):
+	print(name)
+	if name in teams_dict.values():
+		if name == 'Tampa Bay Lightning':
+			return f'<h1>The Tampa Bay Lightning is the best team in the NHL!!!</h1>'
+		else:
+			return f'<h1>The {name} IS an NHL team.</h1>'
+	return f'<h1>{name} is NOT an NHL team.</h1>'
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
