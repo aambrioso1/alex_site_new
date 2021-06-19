@@ -1,0 +1,62 @@
+Generators
+==========
+
+A generator is an function that returns an object we can interate over.
+A generator produces an arbitarily long sequence of values with finite memory.
+
+In Python, a generator can be thought of as an iterator that contains a frozen stack frame. 
+
+
+An `iterator <https://docs.python.org/3/glossary.html#term-iterator>`_ is an object representing a stream of data.
+
+Generator
+---------
+A function which returns a generator iterator. It looks like a normal function except that it contains yield expressions for producing a series of values usable in a for-loop or that can be retrieved one at a time with the next() function.
+
+Generator iterator
+------------------
+An object created by a generator function.   Each yield temporarily suspends processing, remembering current stack.  When the generator iterator resumes, it picks up where it left off.
+
+For example:
+
+.. code :: python
+
+ >>> def odd_number_generator(): # Generator
+ ...    num = 0
+ ...    while True:
+ ...        yield 2 * num - 1
+ ...        num += 1
+ ...
+ >>> odd_number = odd_number_generator # Generator iterator
+ >>> next(odd_number)
+ 1
+ >>> next(odd_number)
+ 3
+ >>> next(odd_number)
+ 5
+
+
+Generator comprehension
+--------------------
+An expression that returns an iterator. The syntax is the same as for a list comprehension except it uses parentheses instead of brackets.
+
+.. code:: python
+
+ >>> import sys
+ >>> even_lc = [2 * i for i in range(10)] # List comprehension
+ >>> even_gc = (2 * i for i in range(10)) # Generator comprehension create an iterator
+ >>> sys.getsizeof(odd_lc)  # Get the size of the list comprehension
+ 184
+ >>> sys.getsizeof(odd_gc)
+ 112
+ >>> even_lc = [2 * i for i in range(1000)]
+ >>> even_gc = (2 * i for i in range(1000))
+ >>> sys.getsizeof(even_lc)
+ 8856
+ >>> sys.getsizeof(even_gc)
+ 112
+
+Note that generator comprehension uses the same amount of memory regardless of the size of the input value.
+
+For another example, see `generator_example.py <https://github.com/aambrioso1/HCC-Programming-Project/blob/master/generator_example.py>`_.
+

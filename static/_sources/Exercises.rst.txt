@@ -1,0 +1,12 @@
+Exercises
+=========
+
+* math
+* complex number
+* string
+* list
+* set
+* tuple
+* boolean
+* dictionary
+* slicing

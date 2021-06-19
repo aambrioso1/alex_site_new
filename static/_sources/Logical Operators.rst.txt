@@ -1,0 +1,6 @@
+Logical Operators
+=================
+
+* not
+* and
+* or

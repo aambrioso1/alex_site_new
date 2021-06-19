@@ -1,0 +1,66 @@
+Conditional Statements
+======================
+
+* if
+* if/else
+* if/elif
+
+
+Conditionals:  Execute code when conditions are satisfied
+
+
+Form of the conditional
+-----------------------
+if (condition):
+	(body)
+
+elif (condition):
+	(body)
+else:
+	(body)
+	
+One line if statements are possible
+-----------------------------------
+if (condition):  (body)
+or
+if (condition:  (statement1); (statement2); statement3)
+
+Python also support the ternary operator
+----------------------------------------
+`<expr1> if <conditional_expr> else <expr2>`
+
+
+
+Examples
+--------
+
+.. code ::
+
+>>>  True == False
+False
+
+>>> 3 >= 3
+True
+
+>>> 10 < 9
+False
+
+>>> a = 10
+>>> b = 3
+>>> if a < b:
+. . .        print('Yes it is!')
+
+
+>>> if  a == b:
+. . .  else:
+. . .       print('a != b')
+a != b
+
+
+>>> if  a == b:
+. . .       print('a == b')
+. . .  elif a < b:
+. . .       print('a < b')
+. . . else:
+            print('a > b')
+a > b

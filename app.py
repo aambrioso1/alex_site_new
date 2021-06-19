@@ -24,7 +24,6 @@ def internal_server_error(e):
 def index():
 	image_file = url_for('static', filename='img/first_algorithm.jpg')
 	return render_template('index.html', image_file = image_file)
-
 """
 @app.route('/about')
 def about():
@@ -81,6 +80,19 @@ def user(name):
 	return f'<h1>{name} is NOT an NHL team.</h1>'
 
 
+@app.route('/my_book')
+def go_to_my_book(path='index.html'):
+    return app.send_static_file(path)
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+"""
+This SO answer was helpful:
+https://stackoverflow.com/questions/14912787/sphinx-documentation-inside-a-flask-running-web-application
+
+Note that reassigning the name of the static folder can be problematic if you are adding a sphinx 
+document to an existing app.   My solution for now was to but all of the Sphinx files directly in
+the static folder.
+"""
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5003)
+

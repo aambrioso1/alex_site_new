@@ -1,0 +1,65 @@
+Classes
+=======
+
+* defining a class
+* class attributes
+* class methods
+* Why?
+* class inheritance
+
+
+Object-oriented programming (OOP)
+
+A method of programing that bundles behaviors and properties into objects.
+The method of programming is supported by Python.
+
+For our example we will create objects that represent a person.   Each of these objects will have three properties: (1)  name (2) a (3) eye color and two behaviors: (1)  greet and (2) respond,
+
+First we create a class.    A class is a blueprint for the an object
+
+class Person:
+	pass
+	
+It is standard practice to use a capital letter for naming a class.
+
+Now we define our properties and set the initial state by defining the .__init__( )
+
+#  You can find a nice explanation of Python classes here.
+# In fact, I highly recommend Real Python as a great website for learning Python.
+
+
+class Person:
+  # Class attribute
+  species = 'human'
+  
+  def __str__(self):
+    return f"{self.name} is a {self}."
+     
+  # instance attributes
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+        
+  # instance methods
+  def greets(self, phrase):
+    return f'{self.name} says, {phrase}.'
+	
+  def responds(self, phrase):
+    return f'{self.name}, replies {phrase}.'
+
+class Female(Person):
+  gender = 'female'
+  likes = 'shoes'
+  
+  def responds(self, phrase='get lost'):
+    return super().responds(phrase)
+  
+
+class Male(Person):
+  gender = 'male'
+  likes = 'football'
+
+  def greets(self, phrase='what\'s your sign'):
+    return super().greets(phrase)
+    
+There is an image in my notes that could be used here.

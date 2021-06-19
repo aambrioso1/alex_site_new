@@ -1,0 +1,30 @@
+Basic Data Structures
+=====================
+
+**Basic Data Structures**
+
+
+
+
+**Computation with basic data stuctures**
+
+
+
+
+
+**The type function**
+
+
+
+
+**common methods**
+
+
+
+
+
+
+
+
+**slicing**
+

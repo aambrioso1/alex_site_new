@@ -1,0 +1,14 @@
+Applications
+============
+
+* finding prime numbers
+* file management
+* adjusting phone and email formats with regular expressions
+* find words in sentences with regular expressions
+* demonstrate Zipf's law
+* json data and NOAA API
+* CodeWars
+* web scraping
+* speech recognition
+* selenium
+* A simple flask app
