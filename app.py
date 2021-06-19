@@ -81,6 +81,7 @@ def user(name):
 
 
 @app.route('/my_book', methods=['GET','POST'])
+@app.route('/my_book/<path:path>')
 def go_to_my_book(path='index.html'):
     return app.send_static_file(path)
 
