@@ -14,7 +14,6 @@ You can invoke the REPL from the command line by simply typing:
  > python
  Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
  Type "help", "copyright", "credits" or "license" for more information.
- >>> 
 
 Now whatever you type after the prompt will be executed interactivately by the Python interpreter.
 Type in 2 + 2 and enter:
@@ -24,7 +23,7 @@ Type in 2 + 2 and enter:
  >>> 2 + 2
  4
 
- More examples
+More examples:
 
 .. code ::
 
@@ -35,14 +34,13 @@ Type in 2 + 2 and enter:
  >>> 1 / 3
  0.3333333333333333
 
-
-For exponentiation use "**":
+For exponentiation use \*\* like this:
 
 .. code ::
 
 >>> 2 ** 10
 
-Integer division 
+For `floor division <https://docs.python.org/3/glossary.html#term-floor-division>`_ (drops the fractional part): 
 
 .. code ::
 

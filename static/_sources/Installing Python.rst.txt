@@ -34,7 +34,7 @@ You can also run Python using other free IDE's.   I recommend the following:
 
 You can follow the links to find information on downloading each one.
 
-You can also run Python using Jupyter notebooks.  Jupyter notebooks allow the user to work in an interactive environment that allows the user to integrate text, code, and data. Jupyter notebooks are available with the Anaconda Distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.
+You can also run Python using Jupyter notebooks.  A Jupyter notebook provides the user with an interactive environment that allows him to integrate text, code, and data. Jupyter notebooks are available with the Anaconda Distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.
 
-As you work through the course you should have a way to write and run example code form the book and your own code.
+As you work through the course you should have a way to write and run example Python code.
 
