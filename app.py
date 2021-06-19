@@ -80,7 +80,7 @@ def user(name):
 	return f'<h1>{name} is NOT an NHL team.</h1>'
 
 
-@app.route('/my_book')
+@app.route('/my_book', methods=['GET','POST'])
 def go_to_my_book(path='index.html'):
     return app.send_static_file(path)
 
