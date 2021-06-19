@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/')
 # moment = Moment(app)
 bootstrap = Bootstrap(app)
 
@@ -81,7 +81,6 @@ def user(name):
 
 
 @app.route('/my_book', methods=['GET','POST'])
-@app.route('/my_book/<path:path>')
 def go_to_my_book(path='index.html'):
     return app.send_static_file(path)
 
@@ -95,5 +94,5 @@ the static folder.
 """
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5001)
 
