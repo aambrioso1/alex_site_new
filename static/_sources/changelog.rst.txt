@@ -27,10 +27,21 @@ Changelog
 ---------
 * complete page on "Generators"
 
-6/17/2021
+
+6/23/2021
+---------
+* Add modular arithmetic and change title to "Basic Math"
+* Change "Basic Data Structures" to "Variables and Basic Data Types"
+
+* Tentative: complete page on "Basic Data Structures"
+
+6/24/2021
 ---------
 * Tentative: work on "Logical Operators"
 
-6/18/2021
+6/25/2021
 ---------
-* Tentative: complete page on "Basic Data Structures"
+* Tentative: work on "Conditional Statements"
+
+
+

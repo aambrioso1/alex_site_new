@@ -3,16 +3,16 @@ Alex's Python Book
 
 .. Alex's Python Book documentation master file, created by
    sphinx-quickstart on Sun May 30 22:13:31 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 
 Introduction
 ------------
 
-We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  They give the user more power, through algorithms, over the information and technology that is every present in today's society.   
+For the past couple of years I have been learning to program in Python.   In the book I have taken what I learned set it down in an organized fashion.  It should be a good resource for me when I teach Python to others interested in teaching or learning Python.
 
-The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in diverse fields from natural language processing to oceanography are using Python and its libraries to support their work.   This book is intended to teach the teacher to leverage the power of the algorithm, through the Python, to enhance her own teaching.
+We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  They give the user more control over the information and technology that is every present in today's society.   
+
+The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in fields as diverse as natural language processing and oceanography are using Python and its libraries to support their work.   I hope that this book can help the reader to leverage the power of the algorithm through the Python.
 
 
 .. toctree::
@@ -20,8 +20,8 @@ The Python programming language is open source, easy to learn, and powerful.   I
    :caption: Contents
 
    Installing Python
-   Mathematical Calculations
-   Basic Data Structures
+   Basic Math
+   Variables and Basic Data Types
    Comprehension
    Exercises
    Logical Operators

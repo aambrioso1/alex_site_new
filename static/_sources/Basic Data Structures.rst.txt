@@ -1,10 +1,10 @@
 Basic Data Structures
 =====================
 
-**Basic Data Structures**
+Change title to "Variables and Basic Data Structures"
 
-
-
+Variables
+---------
 
 **Computation with basic data stuctures**
 

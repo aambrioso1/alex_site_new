@@ -52,8 +52,8 @@
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mathematical%20Calculations.html">Mathematical Calculations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic%20Data%20Structures.html">Basic Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
@@ -140,14 +140,27 @@
 <h1>Alex’s Python Book<a class="headerlink" href="#alex-s-python-book" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  They give the user more power, through algorithms, over the information and technology that is every present in today’s society.</p>
-<p>The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in diverse fields from natural language processing to oceanography are using Python and its libraries to support their work.   This book is intended to teach the teacher to leverage the power of the algorithm, through the Python, to enhance her own teaching.</p>
+<p>For the past couple of years I have been learning to program in Python.   In the book I have taken what I learned set it down in an organized fashion.  It should be a good resource for me when I teach Python to others interested in teaching or learning Python.</p>
+<p>We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  They give the user more control over the information and technology that is every present in today’s society.</p>
+<p>The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in fields as diverse as natural language processing and oceanography are using Python and its libraries to support their work.   I hope that this book can help the reader to leverage the power of the algorithm through the Python.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mathematical%20Calculations.html">Mathematical Calculations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic%20Data%20Structures.html">Basic Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#variables">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#basic-data-types">Basic Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#numeric-types">Numeric Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#sequence-types">Sequence Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#text-type">Text Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#boolean-type">Boolean Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#set-type">Set Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#mapping-type">Mapping Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#string-methods">String Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html#slicing-strings-and-lists">Slicing strings and lists</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
@@ -192,8 +205,9 @@
 <li class="toctree-l2"><a class="reference internal" href="Changelog.html#id3">6/14/2021</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Changelog.html#id4">6/15/2021</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Changelog.html#id5">6/16/2021</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id6">6/17/2021</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id7">6/18/2021</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id6">6/23/2021</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id7">6/24/2021</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id8">6/25/2021</a></li>
 </ul>
 </li>
 </ul>
@@ -219,8 +233,8 @@
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mathematical%20Calculations.html">Mathematical Calculations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic%20Data%20Structures.html">Basic Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
