@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logical Operators &#8212; Alex&#39;s Python Book  documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Operators &#8212; Alex&#39;s Python Book  documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
@@ -53,11 +53,11 @@
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mathematical%20Calculations.html">Mathematical Calculations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic%20Data%20Structures.html">Basic Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Logical Operators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Boolean Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
@@ -76,7 +76,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/Logical Operators.rst.txt"
+      <li><a href="_sources/Boolean Operators.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -117,7 +117,7 @@
               <a href="index.html">Alex's Python Book  documentation</a> &#187;
               
           </li>
-        <li class="nav-item nav-item-this"><a href="">Logical Operators</a></li>
+        <li class="nav-item nav-item-this"><a href="">Boolean Operators</a></li>
                 <li class="right">
                     
 
@@ -140,13 +140,47 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="logical-operators">
-<h1>Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="boolean-operators">
+<h1>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">¶</a></h1>
+<p>There are three Boolean operators in Python:</p>
 <ul class="simple">
-<li><p>not</p></li>
-<li><p>and</p></li>
-<li><p>or</p></li>
+<li><p><cite>and</cite></p></li>
+<li><p><cite>or</cite></p></li>
+<li><p><cite>not</cite></p></li>
 </ul>
+<p>Here we illustrate that each operator works as you would expect when the arguments are one of the two Boolean types, <cite>True</cite> or <cite>False</cite>.</p>
+<p>The <cite>and</cite> operator:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="ow">and</span> <span class="n">F</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="ow">and</span> <span class="n">T</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="ow">and</span> <span class="n">F</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="ow">and</span> <span class="n">T</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The <cite>or</cite> operator:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="ow">or</span> <span class="n">F</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="ow">or</span> <span class="n">T</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="ow">or</span> <span class="n">F</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="ow">or</span> <span class="n">T</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The <cite>not</cite> operator:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="ow">not</span> <span class="n">F</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="ow">not</span> <span class="n">T</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>As we shall see in the next section, these operators are used to control the flow of a program.</p>
 </div>
 
 
@@ -160,11 +194,11 @@
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mathematical%20Calculations.html">Mathematical Calculations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic%20Data%20Structures.html">Basic Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Logical Operators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Boolean Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
@@ -183,7 +217,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/Logical Operators.rst.txt"
+      <li><a href="_sources/Boolean Operators.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -224,7 +258,7 @@
               <a href="index.html">Alex's Python Book  documentation</a> &#187;
               
           </li>
-        <li class="nav-item nav-item-this"><a href="">Logical Operators</a></li>
+        <li class="nav-item nav-item-this"><a href="">Boolean Operators</a></li>
                 <li class="right">
                     
 

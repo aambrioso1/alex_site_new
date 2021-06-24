@@ -2,15 +2,16 @@ Boolean Operators
 =================
 
 There are three Boolean operators in Python:
-- and
-- or
-- not
 
-Here we illustrate that each operator works as you would expect when the arguments are one of the two boolean types, True or False.
+- `and`
+- `or`
+- `not`
 
-The and operator:
+Here we illustrate that each operator works as you would expect when the arguments are one of the two Boolean types, `True` or `False`.
+
+The `and` operator:
+
 .. code ::
-
 >>> T = True
 >>> F = False
 >>> F and F
@@ -22,7 +23,7 @@ False
 >>> T and T
 True
 
-The or operator:
+The `or` operator:
 
 .. code ::
 >>> F or F
@@ -34,7 +35,8 @@ True
 >>> T or T
 True
 
-The not operator:
+The `not` operator:
+
 .. code ::
 >>> not F
 True

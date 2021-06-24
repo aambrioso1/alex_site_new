@@ -24,7 +24,7 @@ The Python programming language is open source, easy to learn, and powerful.   I
    Variables and Basic Data Types
    Comprehension
    Exercises
-   Boolean Operators
+   Logical Operators
    Conditional Statements
    Loops
    Functions
