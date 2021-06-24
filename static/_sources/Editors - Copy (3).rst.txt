@@ -1,8 +1,0 @@
-Editors
--------
-* Sublime Text
-* Notepad
-* Pycharm
-* Visual Studio Code
-* Idle (comes with Python)
-* Spyder (comes with Anaconda distribution)
