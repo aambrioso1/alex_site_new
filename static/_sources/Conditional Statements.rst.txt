@@ -1,40 +1,30 @@
 Conditional Statements
 ======================
 
-* if
-* if/else
-* if/elif
+Conditional statements are used to control the execution of code.
 
-
-Conditionals:  Execute code when conditions are satisfied
-
-
-Form of the conditional
------------------------
-if (condition):
-	(body)
-
+Forms of the conditional
+------------------------
+`if (condition):
 elif (condition):
 	(body)
 else:
-	(body)
+	(body)`
 	
-One line if statements are possible
------------------------------------
-if (condition):  (body)
+One line 'if' statements
+----------------------
+`if (condition):  (body)`
 or
-if (condition:  (statement1); (statement2); statement3)
+`if (condition:  (statement1); (statement2); statement3)`
 
-Python also support the ternary operator
+The ternary operator
 ----------------------------------------
-`<expr1> if <conditional_expr> else <expr2>`
-
-
+`(expr1) if (conditional) else (expr2)`
 
 Examples
 --------
 
-.. code ::
+.. code :: 
 
 >>>  True == False
 False

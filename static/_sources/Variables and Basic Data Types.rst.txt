@@ -16,7 +16,7 @@ Variables
 >>> x * y / z
 7.5
 
-There is a nice style guide for Python Code, `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_, that includes recommended `naming conventions <https://www.python.org/dev/peps/pep-0008/#naming-conventions>`_.  For variables, PEP 8 recommends using lowercase letters with any words separated by underscores.
+There is a nice style guide for Python Code, `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_, that includes recommended `naming conventions <https://www.python.org/dev/peps/pep-0008/#naming-conventions>`_.  For variables PEP 8 recommends using lowercase letters with any words separated by underscores.
 
 .. code ::
 >>> m = 2
@@ -33,7 +33,7 @@ There is a nice style guide for Python Code, `PEP 8 <https://www.python.org/dev/
 
 Basic Data Types
 --------------
-Python has a number of `built-in data types <https://docs.python.org/3/library/stdtypes.html>`_.  We separate the basic ones into the groups used in the Python documentation.
+Python has a number of `built-in data types <https://docs.python.org/3/library/stdtypes.html>`_.  We separate the basic ones into the groups used in the Python documentation and introduce them.
 
 Numeric Types
 -------------
@@ -260,17 +260,17 @@ Slicing strings and lists
 .. code ::
 
 >>> string = 'A Python string'
->>> string[2]
+>>> string[2] # the indexing starts at 0
 'P'
->>> string[2:8]
-'Pyt'
+>>> string[2:8] # note that the slice ends on element 7
+'Python'
 >>> string[:8]
 'A Python'
 >>> string[2:]
 'Python string'
 >>> string[1:10:2]
 ' yhns'
->>> string[10:2:-2]
+>>> string[10:2:-2] # 2 steps back
 't ot'
 >>> string[::-1] # Reverses the string
 'gnirts nohtyP A'

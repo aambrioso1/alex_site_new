@@ -1,5 +1,5 @@
 Other Python Books
-=====
+==================
 
 * `Automate the Boring Stuff <https://automatetheboringstuff.com/>`_
 * `Effective Python <https://effectivepython.com/>`_

@@ -1,6 +1,0 @@
-Mathematical Calculations
--------------------------
-
-* mathematical operations: addtion, subtraction, multiplication, division, exponentiation
-* floor division
-* modulus

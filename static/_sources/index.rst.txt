@@ -22,18 +22,18 @@ The Python programming language is open source, easy to learn, and powerful.   I
    Installing Python
    Basic Math
    Variables and Basic Data Types
-   Comprehension
-   Exercises
    Boolean Operators
+   Functions
    Conditional Statements
    Loops
-   Functions
+   Comprehension
+   Exercises
    Generators
    Classes
    Built-in Libraries
    Third-party Libraries
    Applications
-   Books
+   Other Python Books
    Other Stuff
    git
    Notes

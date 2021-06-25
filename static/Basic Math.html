@@ -55,18 +55,19 @@
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20Operators.html">Boolean Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html#these-functions-example-are-for-later-sections">These functions example are for later sections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
@@ -151,14 +152,26 @@
 </div>
 <p>Now whatever you type after the prompt will be executed interactivately by the Python interpreter.
 Type in 2 + 2 and enter:</p>
-<p>More examples:</p>
-<p>For exponentiation use ** like this:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">**</span> <span class="mi">10</span>
-<span class="go">1024</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
-<span class="go">0.125</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="go">4</span>
 </pre></div>
 </div>
+<p>More examples:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">999</span> <span class="o">*</span> <span class="mi">999</span>
+<span class="go">998001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1234</span> <span class="o">-</span> <span class="mi">4321</span>
+<span class="go">-3087</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="go">0.3333333333333333</span>
+</pre></div>
+</div>
+<p>For exponentiation use ** like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">**</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<p>1024
+&gt;&gt;&gt; 2 ** (-3)
+0.125</p>
 <p>For <a class="reference external" href="https://docs.python.org/3/glossary.html#term-floor-division">floor division</a> (drops the fractional part):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">20</span> <span class="o">//</span> <span class="mi">3</span>
 <span class="go">6</span>
@@ -167,7 +180,7 @@ Type in 2 + 2 and enter:</p>
 </pre></div>
 </div>
 <p>An interesting feature of Python is that integer operations have arbitrary precision:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">**</span> <span class="mi">200</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">**</span> <span class="mi">200</span>
 <span class="go">1606938044258990275541962092341162602522202993782792835301376</span>
 </pre></div>
 </div>
@@ -178,7 +191,7 @@ Type in 2 + 2 and enter:</p>
 <span class="gr">ZeroDivisionError</span>: <span class="n">division by zero</span>
 </pre></div>
 </div>
-<p>For <a class="reference external" href="https://en.wikipedia.org/wiki/Modular_arithmetic">modular arthmetic</a>, use the % symbol:</p>
+<p>For <a class="reference external" href="https://en.wikipedia.org/wiki/Modular_arithmetic">modular arthmetic</a>, use the <cite>%</cite> symbol:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">27</span> <span class="o">%</span> <span class="mi">12</span>
 <span class="go">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">11</span> <span class="o">%</span> <span class="mi">2</span>
@@ -202,18 +215,19 @@ Type in 2 + 2 and enter:</p>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20Operators.html">Boolean Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html#these-functions-example-are-for-later-sections">These functions example are for later sections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>

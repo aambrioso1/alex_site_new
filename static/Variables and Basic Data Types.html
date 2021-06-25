@@ -20,7 +20,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Comprehension" href="Comprehension.html" />
+    <link rel="next" title="Boolean Operators" href="Boolean%20Operators.html" />
     <link rel="prev" title="Basic Math" href="Basic%20Math.html" /><link rel="shortcut icon" type="image/png" href="_static/py.svg" />
             <script type="text/javascript" src="_static/copybutton.js"></script>
             <script type="text/javascript" src="_static/menu.js"></script> 
@@ -67,18 +67,19 @@
 <li class="toctree-l2"><a class="reference internal" href="#slicing-strings-and-lists">Slicing strings and lists</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20Operators.html">Boolean Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html#these-functions-example-are-for-later-sections">These functions example are for later sections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
@@ -113,7 +114,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Comprehension.html" title="Comprehension"
+          <a href="Boolean%20Operators.html" title="Boolean Operators"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="Basic%20Math.html" title="Basic Math"
@@ -165,7 +166,7 @@
 <span class="go">7.5</span>
 </pre></div>
 </div>
-<p>There is a nice style guide for Python Code, <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>, that includes recommended <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">naming conventions</a>.  For variables, PEP 8 recommends using lowercase letters with any words separated by underscores.</p>
+<p>There is a nice style guide for Python Code, <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>, that includes recommended <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">naming conventions</a>.  For variables PEP 8 recommends using lowercase letters with any words separated by underscores.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
@@ -182,7 +183,7 @@
 </div>
 <div class="section" id="basic-data-types">
 <h2>Basic Data Types<a class="headerlink" href="#basic-data-types" title="Permalink to this headline">¶</a></h2>
-<p>Python has a number of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">built-in data types</a>.  We separate the basic ones into the groups used in the Python documentation.</p>
+<p>Python has a number of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">built-in data types</a>.  We separate the basic ones into the groups used in the Python documentation and introduce them.</p>
 </div>
 <div class="section" id="numeric-types">
 <h2>Numeric Types<a class="headerlink" href="#numeric-types" title="Permalink to this headline">¶</a></h2>
@@ -394,17 +395,17 @@ Range is used as follows: range(start, stop, step).  The default for start is 0 
 <h2>Slicing strings and lists<a class="headerlink" href="#slicing-strings-and-lists" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html?highlight=string%20slicing#common-sequence-operations">Slices</a> of strings can be removed with a syntax that looks like this: s[start, stop, step].  Here are a few examples:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;A Python string&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># the indexing starts at 0</span>
 <span class="go">&#39;P&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
-<span class="go">&#39;Pyt&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span> <span class="c1"># note that the slice ends on element 7</span>
+<span class="go">&#39;Python&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span>
 <span class="go">&#39;A Python&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
 <span class="go">&#39;Python string&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 <span class="go">&#39; yhns&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># 2 steps back</span>
 <span class="go">&#39;t ot&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Reverses the string</span>
 <span class="go">&#39;gnirts nohtyP A&#39;</span>
@@ -447,18 +448,19 @@ Range is used as follows: range(start, stop, step).  The default for start is 0 
 <li class="toctree-l2"><a class="reference internal" href="#slicing-strings-and-lists">Slicing strings and lists</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logical%20Operators.html">Logical Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20Operators.html">Boolean Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html#these-functions-example-are-for-later-sections">These functions example are for later sections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
@@ -493,7 +495,7 @@ Range is used as follows: range(start, stop, step).  The default for start is 0 
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Comprehension.html" title="Comprehension"
+          <a href="Boolean%20Operators.html" title="Boolean Operators"
              >next</a> |</li>
         <li class="right" >
           <a href="Basic%20Math.html" title="Basic Math"

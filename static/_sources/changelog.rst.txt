@@ -37,13 +37,14 @@ Changelog
 
 6/24/2021
 ---------
-* Tentative: work on "Logical Operators"
+* Work on "Boolean Operators"
 * Proofread other stuff
 * Think about the problem with the index page on the website:  https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 6/25/2021
 ---------
 * Tentative: work on "Conditional Statements"
+* Proofread other stuff
 
 
 
