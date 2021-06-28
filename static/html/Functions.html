@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions &#8212; Alex&#39;s Python Book  documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Conditional Statements!" href="Conditional%20Statements.html" />
+    <link rel="prev" title="Other Operators" href="Other%20Operators.html" /><link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+         <a href="https://www.python.org/" class="nav-logo">
+             <img src="_static/py.svg" alt="Logo"/>
+         </a>
+        <div class="version_switcher_placeholder"></div>
+        <form id="searchbox" role="search" class="search" action="search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Quick search"/>
+            <input type="submit" value="Go"/>
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Functions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Conditional%20Statements.html" title="Conditional Statements!"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Other%20Operators.html" title="Other Operators"
+             accesskey="P">previous</a> |</li>
+          <li><img src="_static/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">Alex's Python Book  documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Functions</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Built-in Functions</p></li>
+<li><p>Standard Library</p></li>
+<li><p>Defining Functions</p></li>
+<li><p>basic function syntax</p></li>
+<li><p>examples</p></li>
+<li><p>the return statement</p></li>
+<li><p>the pass statement</p></li>
+<li><p>value of functions: modularity and reusability</p></li>
+<li><p>arguments</p></li>
+<li><p>doc strings</p></li>
+<li><p>positional arguments</p></li>
+<li><p>keyword arguments</p></li>
+<li><p>*args</p></li>
+<li><p>**kwargs</p></li>
+</ul>
+<p>We spent time learning basic Python types and operations and working with the REPL.   It’s time to write some programs.   Let’s write our first program and learn an important, maybe the most important, built-in function.   Python has many built-in functions to help make writing programs easier.</p>
+<p>Open up your text editor or IDE and type-in or copy the following::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Save the program as <cite>hello.py</cite>.   Navigate to the same directory where you saved the program and type::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">hello</span><span class="o">.</span><span class="n">py</span>
+<span class="go">Hello World!</span>
+</pre></div>
+</div>
+<p>To define our own function, the syntax is the following::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">arguments</span><span class="p">):</span>
+    <span class="p">(</span><span class="n">body</span> <span class="n">of</span> <span class="n">function</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is a simple example that converts a Celcius temperature to Fahrenheit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">C_to_F</span><span class="p">(</span><span class="n">C</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="n">C</span> <span class="o">+</span> <span class="mi">32</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">C_to_F</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>
+<span class="mf">80.6</span>
+</pre></div>
+</div>
+<p>Here is another example that takes the average of three numbers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">average</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="go">3.0</span>
+</pre></div>
+</div>
+<p>Here is another example that find the median of four numbers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">median</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="go">6.5</span>
+</pre></div>
+</div>
+<p>We will learn better ways to build lists soon. As is, the code shows off some of the things we have learned about lists so far.</p>
+<p>Define a function that “mirrors” a word:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mirror_string</span><span class="p">(</span><span class="s1">&#39;word&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;worddrow&#39;</span>
+</pre></div>
+</div>
+<p>Here is the function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mirror</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">string</span> <span class="o">+</span> <span class="n">string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mirror</span><span class="p">(</span><span class="s1">&#39;Alex&#39;</span><span class="p">))</span>
+<span class="go">AlexxelA</span>
+</pre></div>
+</div>
+<p>Example for later sections after we discussing looping</p>
+<p>Problem
+We are given the following dictionary: with customer numbers as the keys and lists containing a customer name and last month’s spending for the values
+Find the average amount spent per customer.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;001&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alex&#39;</span><span class="p">,</span> <span class="mf">100.00</span><span class="p">],</span>
+<span class="s1">&#39;314&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sonya&#39;</span><span class="p">,</span> <span class="mf">25.25</span><span class="p">],</span>
+<span class="s1">&#39;174&#39;</span><span class="p">:[</span><span class="s1">&#39;Erika&#39;</span><span class="p">,</span> <span class="mf">30.91</span><span class="p">],</span>
+<span class="s1">&#39;521&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Anthony&#39;</span><span class="p">,</span> <span class="mf">34.56</span><span class="p">],</span>
+<span class="s1">&#39;231&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Joseph&#39;</span><span class="p">,</span> <span class="mf">13.76</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">The</span> <span class="n">keys</span> <span class="n">are</span> <span class="n">customer</span> <span class="n">numbers</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">values</span> <span class="n">are</span> <span class="n">lists</span> <span class="n">containing</span> <span class="n">a</span> <span class="n">customer</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">last</span> <span class="n">month</span><span class="s1">&#39;s spending. Find the average amount spend by the customers last month.</span>
+</pre></div>
+</div>
+<p>The following exercises are similar to problems found in ‘CodeWars &lt;<a class="reference external" href="https://www.codewars.com/">https://www.codewars.com/</a>&gt;`_.   CodeWars is an excellent website for practicing to code.   They have lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written which is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about checking code.</p>
+<ul class="simple">
+<li><p>Problem 1</p></li>
+</ul>
+<p>Write a function, <cite>counter(string)</cite>, that counts all of the left and right parenthesis in a string and outputs a list of two integers for these counts.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">counter</span><span class="p">(</span><span class="s1">&#39;)))&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">counter</span><span class="p">(</span><span class="s1">&#39;Python(coding(is)fun!&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Problem 2</p></li>
+</ul>
+<p>Write a function, <cite>trifib(n)</cite>, that takes a single positive integer, n &lt;= 30, as input and returns a single integer.   The function generates the nth term in this sequence:   1, 1, 1, 3, 5, 9, 17, ….  The first three terms are 1 and after that each term is the sum of the previous three terms.   For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trifib</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># by definition</span>
+<span class="n">trifib</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">1</span> <span class="c1"># by definition</span>
+<span class="n">trifib</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">3</span>   <span class="c1"># because 1 + 1 + 1 = 3</span>
+<span class="n">trifib</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">31</span> <span class="c1"># because 5 + 9 + 17 = 31</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Problem 3</p></li>
+</ul>
+<p>Write a Python function called <cite>sum_of_thirds(int)</cite> that takes a positive integer divides it by three, drops the remainder and repeats this process with each divisor. The function then returns the sum of all the quotients. For example:</p>
+<p>20 creates the sequence: 6, 2 and the sum is 6 + 2 = 8. So:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_of_thirds</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">=</span> <span class="mi">8</span>
+</pre></div>
+</div>
+<p>45 creates the sequence: 15, 5, 1 and the sum is 15 + 5 + 1 = 21. So:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_of_thirds</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span> <span class="o">=</span> <span class="mi">21</span>
+</pre></div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Functions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Conditional%20Statements.html" title="Conditional Statements!"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Other%20Operators.html" title="Other Operators"
+             >previous</a> |</li>
+          <li><img src="_static/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">Alex's Python Book  documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Functions</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="copyright.html">Copyright</a> 2021, Alex Ambrioso.
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    See <a href="">History and License</a> for more information.
+    <br /><br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+
+    Last updated on None.
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+Applications
+============
+
+* finding prime numbers
+* file management
+* adjusting phone and email formats with regular expressions
+* find words in sentences with regular expressions
+* demonstrate Zipf's law
+* json data and NOAA API
+* CodeWars
+* web scraping
+* speech recognition
+* selenium
+* A simple flask app
+
+
+Problem
+-------
+Suppose you throw random darts at a unit square in the first quadrant:   0 <= x <= 1  and 0 <= y <= 1.   What is the probability that a dart will land in this section: 0 <= x <= 0.25 and 0 <= y <= 0.25?  Now compute the probability that the dart will land inside the unit circle x^2 + y^2 ≤ 1 still keeping both x and y between 0 and 1?   How can we use this probability?

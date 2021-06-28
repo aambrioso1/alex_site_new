@@ -1,0 +1,64 @@
+Changelog
+=========
+
+6/10/2021
+---------
+* Changelog for keeping track of all changes.
+* Introduction with text from my sabbatical proposal as a first draft for it. 
+* Installed autobuild into the environment.   To run from the command line input
+>>> sphinx-autobuild . ./_build/html 
+
+website folder:  cd "flask/websites/my website/alex_site_new"
+
+6/13/2021
+---------
+* Added extension for copying code
+* Remember linkcheck for checking if links are broken (see extensions)
+* Added draft content for every page!
+
+6/14/2021
+---------
+* complete page on "Installing Python"
+* build a simple flask app to serve the appropriate pages to display the book.
+
+6/15/2021
+---------
+* complete page on "Simple Mathematical Computations"
+
+6/16/2021
+---------
+* complete page on "Generators"
+
+
+6/23/2021
+---------
+* Add modular arithmetic and change title to "Basic Math"
+* Change "Basic Data Structures" to "Variables and Basic Data Types"
+
+* Complete page on "Basic Data Structures"
+
+6/24/2021
+---------
+* Work on "Boolean Operators"
+* Proofread other stuff
+* Think about the problem with the index page on the website:  https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+6/25/2021
+---------
+* Work on "Conditional Statements"
+* Proofread other stuff
+
+6/27/2021
+---------
+* Added a section for comparison operators and changed title to Boolean and Comparison Operators
+
+6/28/2021
+---------
+* Add examples for comparison operators and conditional statements
+
+6/29/2021
+---------
+* Add content to the loops section
+
+
+

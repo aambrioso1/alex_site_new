@@ -1,0 +1,14 @@
+Loops
+=====
+
+`for loop <https://realpython.com/python-for-loop/>`_
+`while loop <https://realpython.com/python-while-loop/>`_
+
+* while
+* range
+* for
+
+This is only a test::
+
+ for i in range(10):
+    print(i)

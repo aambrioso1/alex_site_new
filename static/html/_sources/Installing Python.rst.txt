@@ -1,0 +1,40 @@
+Installing Python
+=================
+
+**Python and a Text Editor**
+
+
+You can download Python for free from `Python.org <https://www.python.org/downloads/>`_.  Just go to the linked website and find the version for your operating system.   Once you have properly installed Python you should be able to confirm that it is working by checking the version from the command line as follows:
+
+.. code ::
+
+    > python --version
+    Python 3.9.5
+
+**Editors**
+
+With Python installed, you can write your code in any text editor and run it from the command line.
+
+I like the `Sublime Text <https://www.sublimetext.com/>`_ editor.  There are many others:
+
+* `Notepad_plus_plus <https://notepad-plus-plus.org/downloads/>`_
+* `EMACS <https://www.gnu.org/software/emacs/>`_
+* `VIM <https://www.vim.org/>`_
+* `Atom <https://atom.io/>`_
+
+**Integrated Development Environments (IDEs)**
+
+You can also run Python using other free IDE's.   I recommend the following:
+
+* IDLE (comes with Python)
+* `Pycharm <https://www.jetbrains.com/pycharm/>`_
+* `Visual Studio Code <https://code.visualstudio.com/>`_
+* Spyder (comes with `Anaconda <https://www.anaconda.com/products/individual>`_)
+
+
+You can follow the links to find information on downloading each one.
+
+You can also run Python using Jupyter notebooks.  A Jupyter notebook provides the user with an interactive environment that allows him to integrate text, code, and data. Jupyter notebooks are available with the Anaconda distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.
+
+As you work through the course you should have a way to write and run example Python code.
+

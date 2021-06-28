@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
 import os
 
-app = Flask(__name__, static_url_path='/')
+app = Flask(__name__, static_url_path='/', static_folder='static/html')
 # moment = Moment(app)
 bootstrap = Bootstrap(app)
 

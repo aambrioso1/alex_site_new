@@ -1,0 +1,108 @@
+Conditional Statements
+=======================
+
+Conditional statements are used to control the execution of code.
+
+Forms of the conditional
+------------------------
+
+If form
+-------
+
+.. code ::
+
+ if (condition):
+     (body)
+
+
+Let's write an expression to decide if we should go to the beach.   The expression will have two two conditions.   One is  'weather' that is True is the weather is good and False if the weather is bad.    And the other is 'sat' which is True if it is Saturday and False otherwsie.   We go to the beach if the weather is good and it is Saturday.
+
+.. code ::
+
+ weather = False
+ sat = True
+ if weather and sat:
+     'Let's go to the beach!'
+ 
+ weather = True
+ sat = True    
+  if weather:
+          return 'Let/'s go to the beach!'
+
+If/else form
+------------
+
+.. code::
+
+ if (condition):
+     (body)
+ else (condition):
+     (body)
+
+If/elif/else form
+-----------------
+
+.. code::
+
+ if (condition):
+     (body)
+ elif (condition):
+     (body)
+ elif (condition):
+     (body)
+ else:
+     (body)
+	
+One line 'if' form
+------------------
+
+.. code ::
+
+ if (condition): (body) 
+
+or
+
+.. code ::
+
+ if (condition: (statement1); (statement2); (statement3)
+
+The ternary operator
+--------------------
+
+.. code ::
+
+ (statement1) if (conditional) else (statment2)
+
+More examples
+-------------
+
+.. code :: 
+
+>>>  True == False
+False
+
+>>> 3 >= 3
+True
+
+>>> 10 < 9
+False
+
+>>> a = 10
+>>> b = 3
+>>> if a < b:
+. . .        print('Yes it is!')
+
+
+>>> if  a == b:
+. . .  else:
+. . .       print('a != b')
+a != b
+
+
+>>> if  a == b:
+. . .       print('a == b')
+. . .  elif a < b:
+. . .       print('a < b')
+. . . else:
+            print('a > b')
+a > b
