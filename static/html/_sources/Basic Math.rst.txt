@@ -11,7 +11,7 @@ You can invoke the REPL from the command line by simply typing:
  Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
  Type "help", "copyright", "credits" or "license" for more information.
 
-Now whatever you type after the prompt will be executed interactivately by the Python interpreter.
+Now whatever you type after the new prompt (>>>) will be executed interactivately by the Python interpreter.
 Type in 2 + 2 and enter::
 
  >>> 2 + 2

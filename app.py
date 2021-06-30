@@ -88,9 +88,7 @@ def go_to_my_book(path='index.html'):
 This SO answer was helpful:
 https://stackoverflow.com/questions/14912787/sphinx-documentation-inside-a-flask-running-web-application
 
-Note that reassigning the name of the static folder can be problematic if you are adding a sphinx 
-document to an existing app.   My solution for now was to but all of the Sphinx files directly in
-the static folder.
+Need to resolve the issue with the table of contents page of book
 """
 
 if __name__ == '__main__':

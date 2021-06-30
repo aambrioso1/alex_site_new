@@ -60,19 +60,19 @@
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conditional Statements</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#forms-of-the-conditional">Forms of the conditional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-form">If form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-else-form">If/else form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-elif-else-form">If/elif/else form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#one-line-if-form">One line ‘if’ form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-form">The <cite>if</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-else-form">The <cite>if/else</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-elif-else-form">The <cite>if/elif/else</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-one-line-if-statement">The one line ‘if’ statement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#the-ternary-operator">The ternary operator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#more-examples">More examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
@@ -155,36 +155,54 @@
 <div class="section" id="forms-of-the-conditional">
 <h2>Forms of the conditional<a class="headerlink" href="#forms-of-the-conditional" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="if-form">
-<h2>If form<a class="headerlink" href="#if-form" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-if-form">
+<h2>The <cite>if</cite> form<a class="headerlink" href="#the-if-form" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Let’s write an expression to decide if we should go to the beach.   The expression will have two two conditions.   One is  ‘weather’ that is True is the weather is good and False if the weather is bad.    And the other is ‘sat’ which is True if it is Saturday and False otherwsie.   We go to the beach if the weather is good and it is Saturday.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>weather = False
-sat = True
-if weather and sat:
-    &#39;Let&#39;s go to the beach!&#39;
-
-weather = True
-sat = True
- if weather:
-         return &#39;Let/&#39;s go to the beach!&#39;
+<p>Let’s write an expression to decide if we should go to the beach.   The expression will have two conditions: ‘weather’ that which is True if the weather is good and False if the weather is bad and ‘sat’ which is True if it is Saturday and False otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string ‘Let's go to the beach!’.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; weather = True
+&gt;&gt;&gt; sat = True
+&gt;&gt;&gt; if weather and sat:
+&gt;&gt;&gt;     print(&#39;Let/&#39;s go to the beach!&#39;)
+&quot;Let&#39;s go to the beach!&quot;
 </pre></div>
 </div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; weather = True
+&gt;&gt;&gt; sat = True
+&gt;&gt;&gt; if weather:
+&gt;&gt;&gt;     print(&#39;Let/&#39;s go to the beach!&#39;)
+&gt;&gt;&gt;
+</pre></div>
 </div>
-<div class="section" id="if-else-form">
-<h2>If/else form<a class="headerlink" href="#if-else-form" title="Permalink to this headline">¶</a></h2>
+<p>Note the use of a back-slash here (\).   This is called an escape character.   Since Python interprets a quote (‘) as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to “escape” the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  “Let’s go to the beach”.  The single quote will be interpreted as a character.</p>
+</div>
+<div class="section" id="the-if-else-form">
+<h2>The <cite>if/else</cite> form<a class="headerlink" href="#the-if-else-form" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 <span class="k">else</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Let’s modify the previous expression that we return the string ‘Let’s stay home.’ if the weather is bad (weather = False).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>weather = False
+sat = True
+if weather and sat:
+    &#39;Let/&#39;s go to the beach!&#39;
+else:  &#39;Let&#39;s stay home&#39;
+
+weather = True
+sat = True
+if weather:
+    return &#39;Let/&#39;s go to the beach!&#39;
+else:  &#39;Let&#39;s stay home&#39;
+</pre></div>
 </div>
-<div class="section" id="if-elif-else-form">
-<h2>If/elif/else form<a class="headerlink" href="#if-elif-else-form" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="the-if-elif-else-form">
+<h2>The <cite>if/elif/else</cite> form<a class="headerlink" href="#the-if-elif-else-form" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 <span class="k">elif</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
@@ -195,9 +213,26 @@ sat = True
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Now we will add some other options when we can’t go to the beach.  If it’s Saturday we will grab an umbrella and go out to eat.   Also, so that we can test on the different conditions, we will define a function, <cite>todo(weather, sat)</cite>, that takes our two Boolean parameters, weather and sat, and outputs a string the tells us what we should do.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">todo</span><span class="p">(</span><span class="n">weather</span><span class="p">,</span> <span class="n">sat</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">weather</span> <span class="ow">and</span> <span class="n">sat</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Let</span><span class="se">\&#39;</span><span class="s1">s go to the beach!&#39;</span>
+    <span class="k">elif</span> <span class="n">sat</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Let</span><span class="se">\&#39;</span><span class="s1">s grab an umbrella and go out to eat!&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Let</span><span class="se">\&#39;</span><span class="s1">s stay home.&#39;</span>
+
+<span class="o">&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">todo</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
+<span class="n">Let</span><span class="s1">&#39;s go to the beach!</span>
+<span class="o">&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">todo</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
+<span class="n">Let</span><span class="s1">&#39;s grab an umbrella and go out to eat!</span>
+<span class="o">&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">todo</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
+<span class="n">Let</span><span class="s1">&#39;s stay home.</span>
+</pre></div>
 </div>
-<div class="section" id="one-line-if-form">
-<h2>One line ‘if’ form<a class="headerlink" href="#one-line-if-form" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="the-one-line-if-statement">
+<h2>The one line ‘if’ statement<a class="headerlink" href="#the-one-line-if-statement" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span> <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -229,22 +264,23 @@ sat = True
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
-<span class="go">. . .        print(&#39;Yes it is!&#39;)</span>
+<span class="go">. . .    print(&#39;Yes it is!&#39;)</span>
+<span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span>  <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
 <span class="go">. . .  else:</span>
-<span class="go">. . .       print(&#39;a != b&#39;)</span>
-<span class="go">a != b</span>
+<span class="go">. . .      print(&#39;a != b&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span>  <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
-<span class="go">. . .       print(&#39;a == b&#39;)</span>
-<span class="go">. . .  elif a &lt; b:</span>
-<span class="go">. . .       print(&#39;a &lt; b&#39;)</span>
+<span class="go">. . .    print(&#39;a == b&#39;)</span>
+<span class="go">. . . elif a &lt; b:</span>
+<span class="go">. . .    print(&#39;a &lt; b&#39;)</span>
 <span class="go">. . . else:</span>
-<span class="go">            print(&#39;a &gt; b&#39;)</span>
-<span class="go">a &gt; b</span>
+<span class="go">          print(&#39;a &gt; b&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
 </div>
@@ -268,19 +304,19 @@ sat = True
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conditional Statements</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#forms-of-the-conditional">Forms of the conditional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-form">If form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-else-form">If/else form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#if-elif-else-form">If/elif/else form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#one-line-if-form">One line ‘if’ form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-form">The <cite>if</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-else-form">The <cite>if/else</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-if-elif-else-form">The <cite>if/elif/else</cite> form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-one-line-if-statement">The one line ‘if’ statement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#the-ternary-operator">The ternary operator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#more-examples">More examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>

@@ -1,14 +1,95 @@
 Loops
 =====
 
-`for loop <https://realpython.com/python-for-loop/>`_
-`while loop <https://realpython.com/python-while-loop/>`_
+**The for loop**
 
-* while
-* range
-* for
+In Python the 'for' loop has the following structure:
 
-This is only a test::
+.. code::
 
- for i in range(10):
-    print(i)
+ for (item) in (iterable):
+     (body)
+
+The item is a variable name that can be used in the body and iterable can be a string, list, tuple, sets, or dicts.  Here are some examples:
+
+.. code::
+
+ for item in ['one', 'three', 'five']:
+     print(i)
+
+ one
+ three
+ five
+
+ for letter in 'Python':
+     print(letter)
+
+ P
+ y
+ t
+ o
+ n
+
+ my_dict = {'Alex': 60, 'Anthony': 24, 'Erika': 21}
+ for key in my_dict.keys():
+     print(key + ' is', my_dict[key], 'years old.')
+ 
+ Alex is 60 years old.
+ Anthony is 24 years old.
+ Erika is 21 years old.
+
+In programs it is common to iterate through a sequence of integers.   Recall the range function, 'range(start, stop, step)', is a iterator that generates integers.   It can be used in a loop like this:
+
+.. code::
+ 
+ for i in range(5):
+     print(i)
+
+ 0
+ 1
+ 2
+ 3
+ 4
+
+ vowels = 'aeiou'
+ alphabet = 'abcdefghijklmnopqrstuvwxyz'
+ consonants = ''
+ for let in alphabet:
+      if let not in vowels:
+      consonants += let
+ print('The consonants are:', consonants)
+
+**The while loop**
+
+The while loop is used when we want to repeat code until a condition is met.  This the structure of the while loop in Python:
+
+.. code::
+
+ while (condition):
+     (body)
+
+Here is an example:
+
+.. code::
+ 
+ lst = ['one', 'two', 'three', 'stop', 'four', 'five']
+ i = 0
+ item = lst[0]
+ while item != 'stop':
+     print(item)
+     i += 1
+     item = lst[i]
+ one
+ two
+ three
+ 
+**Using `break`, `continue`, and `else` with a `while`**
+
+A while loop with else looks like this:
+
+.. code::
+
+ while (condition):
+     (body)
+ else:
+     (more body)

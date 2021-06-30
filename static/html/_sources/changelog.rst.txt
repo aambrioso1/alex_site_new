@@ -55,10 +55,44 @@ website folder:  cd "flask/websites/my website/alex_site_new"
 6/28/2021
 ---------
 * Add examples for comparison operators and conditional statements
+* Fix my website so that the book is in its own folder.  This makes
+it easy to update.   Simple copy Sphinx's html folder to the static folder.
+* Need to resolve the problem with the table of contents.
 
 6/29/2021
 ---------
-* Add content to the loops section
+* Add more content to conditional statements
+* Add content to the section on loops
+* Proofread
+
+
+
+
+6/30/2021
+---------
+* Proofread
+* Add more content to comprehension
+* Proofread
+
+7/1/2021
+--------
+* Add more content to generators
+* Proofread
+
+7/2/2021
+--------
+* Add more content to classes
+* Proofread
+
+7/3/2021
+--------
+* Add more content to exercises
+* Proofread
+
+7/4/2021
+--------
+* Enjoy Independence Day!!!
+
 
 
 
