@@ -1,6 +1,0 @@
-Comprehension
-=============
-
-* defining a comprehension
-* conditional statements and comprehension
-* dictionary comprehension

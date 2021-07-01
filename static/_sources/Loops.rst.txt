@@ -1,6 +1,0 @@
-Loops
-=====
-
-* while
-* range
-* for

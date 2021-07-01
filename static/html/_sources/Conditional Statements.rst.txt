@@ -14,7 +14,7 @@ The `if` form
  if (condition):
      (body)
 
-Let's write an expression to decide if we should go to the beach.   The expression will have two conditions: 'weather' that which is True if the weather is good and False if the weather is bad and 'sat' which is True if it is Saturday and False otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string 'Let\'s go to the beach!'.   
+Let's write an expression to decide if we should go to the beach.   The expression will have two conditions: 'weather' that is true if the weather is good and false if the weather is bad and 'sat' which is true if it is Saturday and false otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string 'Let\'s go to the beach!'.   
 
 .. code ::
 
@@ -30,7 +30,7 @@ Let's write an expression to decide if we should go to the beach.   The expressi
 >>>     print('Let/'s go to the beach!')
 >>>
 
-Note the use of a back-slash here (\\).   This is called an escape character.   Since Python interprets a quote (') as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to "escape" the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  "Let's go to the beach".  The single quote will be interpreted as a character. 
+Note the use of a forward-slash here (/).   This is called an escape character.   Since Python interprets a quote (') as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to escape the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  "Let's go to the beach".  The single quote will be interpreted as a character. 
 
 The `if/else` form
 ------------
@@ -94,7 +94,7 @@ Now we will add some other options when we can't go to the beach.  If it's Satur
 
 	
 The one line 'if' statement
------------------------
+---------------------------
 
 .. code ::
 
@@ -104,7 +104,19 @@ or
 
 .. code ::
 
- if (condition: (statement1); (statement2); (statement3)
+ if (condition): (statement1); (statement2); (statement3)
+
+We give an example of each:
+
+.. code ::
+
+ >>> p = False
+ >>> if not p: print('p is false')
+ p is false
+ >>> if not p: print(10*'*'); print('p is false'); print(10*'*')
+ **********
+ p is false
+ **********
 
 The ternary operator
 --------------------
@@ -112,6 +124,13 @@ The ternary operator
 .. code ::
 
  (statement1) if (conditional) else (statment2)
+
+An example:
+
+.. code ::
+
+ p = True
+ 'p is false' if p else 'p is true'
 
 More examples
 -------------

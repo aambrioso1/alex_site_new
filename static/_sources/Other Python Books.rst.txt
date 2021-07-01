@@ -1,6 +1,0 @@
-Other Python Books
-==================
-
-* `Automate the Boring Stuff <https://automatetheboringstuff.com/>`_
-* `Effective Python <https://effectivepython.com/>`_
-* `Flask Web Development <https://www.oreilly.com/library/view/flask-web-development/9781491991725/>`_

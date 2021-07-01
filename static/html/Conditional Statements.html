@@ -161,7 +161,7 @@
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Let’s write an expression to decide if we should go to the beach.   The expression will have two conditions: ‘weather’ that which is True if the weather is good and False if the weather is bad and ‘sat’ which is True if it is Saturday and False otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string ‘Let's go to the beach!’.</p>
+<p>Let’s write an expression to decide if we should go to the beach.   The expression will have two conditions: ‘weather’ that is true if the weather is good and false if the weather is bad and ‘sat’ which is true if it is Saturday and false otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string ‘Let's go to the beach!’.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; weather = True
 &gt;&gt;&gt; sat = True
 &gt;&gt;&gt; if weather and sat:
@@ -176,7 +176,7 @@
 &gt;&gt;&gt;
 </pre></div>
 </div>
-<p>Note the use of a back-slash here (\).   This is called an escape character.   Since Python interprets a quote (‘) as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to “escape” the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  “Let’s go to the beach”.  The single quote will be interpreted as a character.</p>
+<p>Note the use of a forward-slash here (/).   This is called an escape character.   Since Python interprets a quote (‘) as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to escape the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  “Let’s go to the beach”.  The single quote will be interpreted as a character.</p>
 </div>
 <div class="section" id="the-if-else-form">
 <h2>The <cite>if/else</cite> form<a class="headerlink" href="#the-if-else-form" title="Permalink to this headline">¶</a></h2>
@@ -237,13 +237,28 @@ else:  &#39;Let&#39;s stay home&#39;
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">:</span> <span class="p">(</span><span class="n">statement1</span><span class="p">);</span> <span class="p">(</span><span class="n">statement2</span><span class="p">);</span> <span class="p">(</span><span class="n">statement3</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span> <span class="p">(</span><span class="n">statement1</span><span class="p">);</span> <span class="p">(</span><span class="n">statement2</span><span class="p">);</span> <span class="p">(</span><span class="n">statement3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We give an example of each:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p is false&#39;</span><span class="p">)</span>
+<span class="go">p is false</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="s1">&#39;*&#39;</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p is false&#39;</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="go">**********</span>
+<span class="go">p is false</span>
+<span class="go">**********</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="the-ternary-operator">
 <h2>The ternary operator<a class="headerlink" href="#the-ternary-operator" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">statement1</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">conditional</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="n">statment2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>An example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="s1">&#39;p is false&#39;</span> <span class="k">if</span> <span class="n">p</span> <span class="k">else</span> <span class="s1">&#39;p is true&#39;</span>
 </pre></div>
 </div>
 </div>
