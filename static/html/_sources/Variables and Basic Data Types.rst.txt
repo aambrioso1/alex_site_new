@@ -1,10 +1,9 @@
 Variables and Basic Data Types
 ==============================
 
-In this section we discuss variables and the basic built-in data types.  At the end of the section we review useful methods associated with some of the data types.
+In this section we discuss variables and the basic built-in data types.  At the end of the section we review some useful methods associated with the data types.
 
-Variables can be assign to objects in Python.   We do not need to declare or define them in advance.   
-
+Variables can be assigned to objects in Python.   We do not need to declare or define them in advance.   
 
 Variables
 ---------
@@ -22,7 +21,7 @@ There is a nice style guide for Python Code, `PEP 8 <https://www.python.org/dev/
 >>> m = 2
 >>> x = 3
 >>> b = -1
->>> y = m * x + b
+>>> y = m*x + b
 >>> y
 5
 >>> rate_in_mph = 60
@@ -31,13 +30,16 @@ There is a nice style guide for Python Code, `PEP 8 <https://www.python.org/dev/
 >>> distance_in_miles
 300
 
+These examples illustrate the typical use of `white space <https://www.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements>`_ in Python expressions.
+
 Basic Data Types
 --------------
-Python has a number of `built-in data types <https://docs.python.org/3/library/stdtypes.html>`_.  We separate the basic ones into the groups used in the Python documentation and introduce them.
+
+Python has a number of `built-in data types <https://docs.python.org/3/library/stdtypes.html>`_.  We separate the basic ones into the groups and introduce them.
 
 Numeric Types
 -------------
-There are three basic numeric types int (integers), float (floating point numbers), and complex (complex numbers).   We introduce the type function here to help with identifying the different types.   We will introduce more built-in functions and user-defined functions in a later section.
+There are three basic numeric types int (integers), float (floating point numbers), and complex (complex numbers).   We introduce the type function, `type(argument)`, here.  It returns the type of the argument.   We will introduce more built-in functions soon and user-defined functions in later sections.
 
 Integers:
 
@@ -85,11 +87,11 @@ Continuing with the variables assigned above, the type function would output the
 
 Sequence Types
 --------------
-The list is used to store heterogenous objects.   The objects are separated by commas and enclosed with square brackets.
+Lists are commonly used to store heterogenous objects.   The objects are separated by commas and enclosed with square brackets.
 
 .. code ::
 >>> list1 = [] # empty list
->>> list2 = [-1, 0, 1]
+>>> list2 = ['a', 'b', 1, 2]
 >>> list3 = [1j, -1j]
 >>> type(list3)
 <class 'list'>
@@ -104,7 +106,7 @@ The tuple is used for a sequence of homogeneous objects.   The objects are separ
 <class 'tuple'>
 
 A range is a sequence of integers.  The range type is commonly used with loops.   We will introduce loops later.   Here will use the list(), set(), and tuple() constructors to illustrate how range works.
-Range is used as follows: range(start, stop, step).  The default for start is 0 and the default for step is 1.
+Range is used as follows: range(start, stop, step) where start, stop, and step are integers.  Both start and step are optional.  The default for start is 0 and the default for step is 1.   Note that range will begin with start and increment by step.   It will end on the iteration just before it reaches stop.
 
 .. code ::
 >>> range(3)

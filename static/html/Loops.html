@@ -193,9 +193,10 @@
      <span class="k">if</span> <span class="n">let</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
      <span class="n">consonants</span> <span class="o">+=</span> <span class="n">let</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The consonants are:&#39;</span><span class="p">,</span> <span class="n">consonants</span><span class="p">)</span>
+
+<span class="n">The</span> <span class="n">consonants</span> <span class="n">are</span><span class="p">:</span> <span class="n">bcdfghjklmnpqrstvwxyz</span>
 </pre></div>
 </div>
-<p>The consonants are: bcdfghjklmnpqrstvwxyz</p>
 <p><strong>The while loop</strong></p>
 <p>The while loop is used when we want to repeat code until a condition is met.  This the structure of the while loop in Python:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
@@ -216,6 +217,7 @@
 </pre></div>
 </div>
 <p><strong>Using `break`, `continue`, and `else` with a `while`</strong></p>
+<p><strong>A `while` loop with a ‘break’</strong></p>
 <p>The <cite>break</cite> statement will terminate a while loop.   Here is a common idea.   We want to leave it up to the user to continue “playing” until he wants to stop.   Here is some code that uses the while/break to do this.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;I will keep going until you input Y or y.</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -238,7 +240,8 @@
 <span class="n">You</span> <span class="nb">input</span> <span class="n">Y</span> <span class="n">so</span> <span class="n">I</span> <span class="n">stopped</span><span class="o">.</span>
 </pre></div>
 </div>
-<p>A while loop with continue.   The continue statement will move control of the execution back to the top of the loop.</p>
+<p><strong>A while loop with continue</strong></p>
+<p>The continue statement will move control of the execution back to the top of the loop.</p>
 <p>A while loop with else looks like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="p">(</span><span class="n">body</span><span class="p">)</span>
@@ -274,7 +277,43 @@
 <span class="o">&gt;</span> <span class="n">The</span> <span class="k">while</span> <span class="n">loop</span> <span class="n">looped</span> <span class="mi">10</span> <span class="n">times</span><span class="o">.</span>
 </pre></div>
 </div>
-<p>With breaker set to 10 the else statement is not executed.  The loop iterates 10 times.   On the last iteration the if condition is met and the loop is exited before the while condition is checked.</p>
+<p>With <cite>breaker</cite> set to 10 the loop still iterates 10 times.   But the <cite>else</cite> statement is not executed.  On the last iteration the <cite>if</cite> condition is met before the while condition is checked.</p>
+<p><strong>Nested Loops</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">articles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;The&#39;</span><span class="p">]</span>
+<span class="n">verbs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;walks&#39;</span><span class="p">,</span> <span class="s1">&#39;talks&#39;</span><span class="p">,</span> <span class="s1">&#39;jumps&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">verb</span> <span class="ow">in</span> <span class="n">verbs</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">article</span> <span class="o">+</span> <span class="s1">&#39; child &#39;</span> <span class="o">+</span> <span class="n">verb</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+<span class="n">A</span> <span class="n">child</span> <span class="n">walks</span><span class="o">.</span>
+<span class="n">A</span> <span class="n">child</span> <span class="n">talks</span><span class="o">.</span>
+<span class="n">A</span> <span class="n">child</span> <span class="n">jumps</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">child</span> <span class="n">walks</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">child</span> <span class="n">talks</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">child</span> <span class="n">jumps</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Here is another example.   On an 8 x 8 chessboard the rows are labeled from 1 to 8 and the columns are labeled for a to h.   Let’s generate a list of strings that represent each square on a chess board for example ‘e4’.</p>
+<p><strong>Put an image here</strong></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#/media/File:SCD_algebraic_notation.svg">Chessboard</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">let</span> <span class="ow">in</span> <span class="s1">&#39;abcdefgh&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">let</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="n">a8</span> <span class="n">b8</span> <span class="n">c8</span> <span class="n">d8</span> <span class="n">e8</span> <span class="n">f8</span> <span class="n">g8</span> <span class="n">h8</span>
+<span class="n">a7</span> <span class="n">b7</span> <span class="n">c7</span> <span class="n">d7</span> <span class="n">e7</span> <span class="n">f7</span> <span class="n">g7</span> <span class="n">h7</span>
+<span class="n">a6</span> <span class="n">b6</span> <span class="n">c6</span> <span class="n">d6</span> <span class="n">e6</span> <span class="n">f6</span> <span class="n">g6</span> <span class="n">h6</span>
+<span class="n">a5</span> <span class="n">b5</span> <span class="n">c5</span> <span class="n">d5</span> <span class="n">e5</span> <span class="n">f5</span> <span class="n">g5</span> <span class="n">h5</span>
+<span class="n">a4</span> <span class="n">b4</span> <span class="n">c4</span> <span class="n">d4</span> <span class="n">e4</span> <span class="n">f4</span> <span class="n">g4</span> <span class="n">h4</span>
+<span class="n">a3</span> <span class="n">b3</span> <span class="n">c3</span> <span class="n">d3</span> <span class="n">e3</span> <span class="n">f3</span> <span class="n">g3</span> <span class="n">h3</span>
+<span class="n">a2</span> <span class="n">b2</span> <span class="n">c2</span> <span class="n">d2</span> <span class="n">e2</span> <span class="n">f2</span> <span class="n">g2</span> <span class="n">h2</span>
+<span class="n">a1</span> <span class="n">b1</span> <span class="n">c1</span> <span class="n">d1</span> <span class="n">e1</span> <span class="n">f1</span> <span class="n">g1</span> <span class="n">h1</span>
+</pre></div>
+</div>
+<p>The extra parameter <cite>end</cite> specifies how to end the print statement.   The default is a newline.   The <cite>print()</cite> prints a newline.  It is indented just one level so that it will execute each time the inner <cite>for</cite> loop finishes iterating.   This way the rows of the output consist of all the squares for each letter.  We reverse the range() so that the output will look like a chessboard from White’s perspective.</p>
 </div>
 
 

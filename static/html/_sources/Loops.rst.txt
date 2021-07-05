@@ -63,7 +63,7 @@ In programs it is common to iterate through a sequence of integers.   Recall the
       consonants += let
  print('The consonants are:', consonants)
 
-The consonants are: bcdfghjklmnpqrstvwxyz
+ The consonants are: bcdfghjklmnpqrstvwxyz
 
 **The while loop**
 
@@ -91,6 +91,8 @@ Here is an example:
  
 **Using `break`, `continue`, and `else` with a `while`**
 
+**A `while` loop with a 'break'**
+
 The `break` statement will terminate a while loop.   Here is a common idea.   We want to leave it up to the user to continue "playing" until he wants to stop.   Here is some code that uses the while/break to do this.
 
 .. code::
@@ -115,7 +117,9 @@ The `break` statement will terminate a while loop.   Here is a common idea.   We
  Y
  You input Y so I stopped.
 
-A while loop with continue.   The continue statement will move control of the execution back to the top of the loop.
+**A while loop with continue**  
+
+The continue statement will move control of the execution back to the top of the loop.
 
 
 A while loop with else looks like this:
@@ -160,5 +164,49 @@ Since the condition count < 10 fails the else statement is executes after 10 ite
 
  > The while loop looped 10 times.
 
-With breaker set to 10 the else statement is not executed.  The loop iterates 10 times.   On the last iteration the if condition is met and the loop is exited before the while condition is checked.   
+With `breaker` set to 10 the loop still iterates 10 times.   But the `else` statement is not executed.  On the last iteration the `if` condition is met before the while condition is checked.   
+
+**Nested Loops**
+
+.. code::
+
+ articles = ['A','The']
+ verbs = ['walks', 'talks', 'jumps']
+
+ for article in articles:
+     for verb in verbs:
+         print(article + ' child ' + verb + '.')
+ 
+ A child walks.
+ A child talks.
+ A child jumps.
+ The child walks.
+ The child talks.
+ The child jumps.
+
+Here is another example.   On an 8 x 8 chessboard the rows are labeled from 1 to 8 and the columns are labeled for a to h.   Let's generate a list of strings that represent each square on a chess board for example 'e4'.
+
+**Put an image here**
+
+`Chessboard <https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#/media/File:SCD_algebraic_notation.svg>`_
+
+.. code::
+
+ squares = []
+ for i in range(8, 0, -1):
+     for let in 'abcdefgh':
+         print(let + str(i), end = ' ')
+     print()
+
+ a8 b8 c8 d8 e8 f8 g8 h8
+ a7 b7 c7 d7 e7 f7 g7 h7
+ a6 b6 c6 d6 e6 f6 g6 h6
+ a5 b5 c5 d5 e5 f5 g5 h5
+ a4 b4 c4 d4 e4 f4 g4 h4
+ a3 b3 c3 d3 e3 f3 g3 h3
+ a2 b2 c2 d2 e2 f2 g2 h2
+ a1 b1 c1 d1 e1 f1 g1 h1
+
+The extra parameter `end` specifies how to end the print statement.   The default is a newline.   The `print()` prints a newline.  It is indented just one level so that it will execute each time the inner `for` loop finishes iterating.   This way the rows of the output consist of all the squares for each letter.  We reverse the range() so that the output will look like a chessboard from White's perspective.
+
 

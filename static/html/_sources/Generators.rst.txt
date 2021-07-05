@@ -1,7 +1,7 @@
 Generators
 ==========
 
-A generator is an function that returns an object we can interate over.
+A generator is a function that returns an object we can interate over.
 A generator produces an arbitarily long sequence of values with finite memory.
 
 In Python, a generator can be thought of as an iterator that contains a frozen stack frame. 

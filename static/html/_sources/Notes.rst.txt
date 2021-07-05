@@ -11,5 +11,4 @@ Some notes for me
 
 * Following Mariatta's excellent tutorial: https://sphinx-intro-tutorial.readthedocs.io/en/latest/index.html  
 * Taking notes in OneNote Programming/Sphinx Tutorial
-* Extensions for autobuilding, copying, and themes can be found here:
-https://sphinx-intro-tutorial.readthedocs.io/en/latest/sphinx_extensions.html
+* Extensions for autobuilding, copying, and themes can be found here `Sphinx Intro Tutorial <https://sphinx-intro-tutorial.readthedocs.io/en/latest/sphinx_extensions.html>`_.

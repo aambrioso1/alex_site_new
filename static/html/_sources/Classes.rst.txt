@@ -9,6 +9,7 @@ Classes
 
 
 Object-oriented programming (OOP)
+---------------------------------
 
 A method of programing that bundles behaviors and properties into objects.
 The method of programming is supported by Python.
@@ -17,49 +18,78 @@ For our example we will create objects that represent a person.   Each of these 
 
 First we create a class.    A class is a blueprint for the an object
 
-class Person:
-	pass
+**A Simple Class**
+
+ code::
+ class ClassName:
+	    body
 	
 It is standard practice to use a capital letter for naming a class.
 
+**A Class with attributes and methods**
+
 Now we define our properties and set the initial state by defining the .__init__( )
 
-#  You can find a nice explanation of Python classes here.
-# In fact, I highly recommend Real Python as a great website for learning Python.
+.. code::
 
 
-class Person:
+
+More generally a class has a form like this:
+
+class ClassName:
   # Class attribute
-  species = 'human'
+  (statement)
   
-  def __str__(self):
-    return f"{self.name} is a {self}."
-     
   # instance attributes
   def __init__(self, name, age):
-    self.name = name
-    self.age = age
+      self.attr1 = value
+  .
+  .
+  .
+
         
   # instance methods
-  def greets(self, phrase):
-    return f'{self.name} says, {phrase}.'
+  def method1(self, para1):
+      body
+  .
+  .
+  .
+
+Here is an example:
+
+.. class::
+
+ class Person:
+     # Class attribute
+     species = 'human'
+  
+     def __str__(self):
+         return f"{self.name} is a {self}."
+     
+     # instance attributes
+     def __init__(self, name, age):
+         self.name = name
+         self.age = age
+        
+     # instance methods
+     def greets(self, phrase):
+         return f'{self.name} says, {phrase}.'
 	
-  def responds(self, phrase):
-    return f'{self.name}, replies {phrase}.'
+     def responds(self, phrase):
+         return f'{self.name}, replies {phrase}.'
+
+**Class Inheritance**
 
 class Female(Person):
-  gender = 'female'
-  likes = 'shoes'
+    gender = 'female'
+    likes = 'movies'
   
-  def responds(self, phrase='get lost'):
+    def responds(self, phrase='get lost'):
     return super().responds(phrase)
   
-
 class Male(Person):
-  gender = 'male'
-  likes = 'football'
+    gender = 'male'
+    likes = 'sports'
 
-  def greets(self, phrase='what\'s your sign'):
-    return super().greets(phrase)
-    
-There is an image in my notes that could be used here.
+    def greets(self, phrase='what\'s your sign'):
+        return super().greets(phrase)

@@ -52,6 +52,11 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Variables and Basic Data Types</a><ul>
@@ -70,12 +75,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
@@ -154,8 +159,8 @@
             
   <div class="section" id="variables-and-basic-data-types">
 <h1>Variables and Basic Data Types<a class="headerlink" href="#variables-and-basic-data-types" title="Permalink to this headline">¶</a></h1>
-<p>In this section we discuss variables and the basic built-in data types.  At the end of the section we review useful methods associated with some of the data types.</p>
-<p>Variables can be assign to objects in Python.   We do not need to declare or define them in advance.</p>
+<p>In this section we discuss variables and the basic built-in data types.  At the end of the section we review some useful methods associated with the data types.</p>
+<p>Variables can be assigned to objects in Python.   We do not need to declare or define them in advance.</p>
 <div class="section" id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
@@ -169,7 +174,7 @@
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">b</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
 <span class="go">5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rate_in_mph</span> <span class="o">=</span> <span class="mi">60</span>
@@ -179,14 +184,15 @@
 <span class="go">300</span>
 </pre></div>
 </div>
+<p>These examples illustrate the typical use of <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements">white space</a> in Python expressions.</p>
 </div>
 <div class="section" id="basic-data-types">
 <h2>Basic Data Types<a class="headerlink" href="#basic-data-types" title="Permalink to this headline">¶</a></h2>
-<p>Python has a number of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">built-in data types</a>.  We separate the basic ones into the groups used in the Python documentation and introduce them.</p>
+<p>Python has a number of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">built-in data types</a>.  We separate the basic ones into the groups and introduce them.</p>
 </div>
 <div class="section" id="numeric-types">
 <h2>Numeric Types<a class="headerlink" href="#numeric-types" title="Permalink to this headline">¶</a></h2>
-<p>There are three basic numeric types int (integers), float (floating point numbers), and complex (complex numbers).   We introduce the type function here to help with identifying the different types.   We will introduce more built-in functions and user-defined functions in a later section.</p>
+<p>There are three basic numeric types int (integers), float (floating point numbers), and complex (complex numbers).   We introduce the type function, <cite>type(argument)</cite>, here.  It returns the type of the argument.   We will introduce more built-in functions soon and user-defined functions in later sections.</p>
 <p>Integers:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="mi">8</span>
@@ -230,9 +236,9 @@
 </div>
 <div class="section" id="sequence-types">
 <h2>Sequence Types<a class="headerlink" href="#sequence-types" title="Permalink to this headline">¶</a></h2>
-<p>The list is used to store heterogenous objects.   The objects are separated by commas and enclosed with square brackets.</p>
+<p>Lists are commonly used to store heterogenous objects.   The objects are separated by commas and enclosed with square brackets.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">list1</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty list</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="n">j</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">list3</span><span class="p">)</span>
 <span class="go">&lt;class &#39;list&#39;&gt;</span>
@@ -246,7 +252,7 @@
 </pre></div>
 </div>
 <p>A range is a sequence of integers.  The range type is commonly used with loops.   We will introduce loops later.   Here will use the list(), set(), and tuple() constructors to illustrate how range works.
-Range is used as follows: range(start, stop, step).  The default for start is 0 and the default for step is 1.</p>
+Range is used as follows: range(start, stop, step) where start, stop, and step are integers.  Both start and step are optional.  The default for start is 0 and the default for step is 1.   Note that range will begin with start and increment by step.   It will end on the iteration just before it reaches stop.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="go">range(0, 3)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
@@ -432,6 +438,11 @@ Range is used as follows: range(start, stop, step).  The default for start is 0 
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Variables and Basic Data Types</a><ul>
@@ -450,12 +461,12 @@ Range is used as follows: range(start, stop, step).  The default for start is 0 
 <li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>

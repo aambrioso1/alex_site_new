@@ -11,27 +11,28 @@ Comprehension is a nice way to build lists, sets, and dictionaries.   First let'
  
  alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
- list1 = []
- for letter in alphabet:
- list1.append(letter)
- list1
+ >>> list = []
+ >>> for letter in alphabet:
+ ...     list.append(letter)
+ >>> list
+ ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-Every list comprehension has three parts:  (1) a member, (2) an expression, and (3) an iterable.  A conditional is optional and can be used to control membership. Here are the forms of comprehension:
-
-.. code::
-
- new_list = [expression for member in iterable]
- new_list = [expression for member in iterable (if conditional)]
- new_list = [expression (if conditional) for member in iterable]
-
-Now we will construct the same list using a comprehension.  
+Every list comprehension has three parts:  (1) a member, (2) an expression, and (3) an iterable.  A conditional is optional and can be used to control membership. Here are the forms of list comprehension:
 
 .. code::
 
- list2 = [letter for letter in alphabet]
- print('list2 = ', list2)
+ [expression for member in iterable]
+ [expression for member in iterable (if conditional)]
+ [expression (if conditional) for member in iterable]
 
-Note that we reduced the construction to one easy-to-read line.
+Now we will construct the same list we construct with a loop using a comprehension.  
+
+.. code::
+
+>>> [letter for letter in alphabet]
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z]
+ 
+Note that we by using conprehension we reduced the construction to one easy-to-read line.
  
 Here are some examples using conditionals along with comprehension.
  

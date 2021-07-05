@@ -29,7 +29,6 @@ website folder:  cd "flask/websites/my website/alex_site_new"
 ---------
 * complete page on "Generators"
 
-
 6/23/2021
 ---------
 * Add modular arithmetic and change title to "Basic Math"
@@ -79,6 +78,7 @@ it easy to update.   Simple copy Sphinx's html folder to the static folder.
 
 7/2/2021
 --------
+* Add an example of a nested loops to loop section
 * Review comprehension
 * Work on generators
 * Add more content to classes
@@ -92,6 +92,33 @@ it easy to update.   Simple copy Sphinx's html folder to the static folder.
 7/4/2021
 --------
 * Enjoy Independence Day!!!
+
+7/5/2021
+--------
+* Proofread to Variables
+* Update website
+
+7/6/2021
+--------
+* Proofread to Other Operators
+* Update website
+
+7/7/2021
+--------
+* Proofread to Loops
+* Update website
+
+7/8/2021
+--------
+* Classes
+* Proofread to Classes
+* Update website
+
+7/9/2021
+--------
+* Exercises
+* Proofread
+* Update website
 
 
 

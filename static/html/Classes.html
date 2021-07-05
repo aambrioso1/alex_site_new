@@ -20,7 +20,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Built-in Libraries" href="Built-in%20Libraries.html" />
+    <link rel="next" title="Exercises" href="Exercises.html" />
     <link rel="prev" title="Generators" href="Generators.html" /><link rel="shortcut icon" type="image/png" href="_static/py.svg" />
             <script type="text/javascript" src="_static/copybutton.js"></script>
             <script type="text/javascript" src="_static/menu.js"></script> 
@@ -58,12 +58,15 @@
 <li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#object-oriented-programming-oop">Object-oriented programming (OOP)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
@@ -101,7 +104,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Built-in%20Libraries.html" title="Built-in Libraries"
+          <a href="Exercises.html" title="Exercises"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="Generators.html" title="Generators"
@@ -149,58 +152,58 @@
 <li><p>Why?</p></li>
 <li><p>class inheritance</p></li>
 </ul>
-<p>Object-oriented programming (OOP)</p>
+<div class="section" id="object-oriented-programming-oop">
+<h2>Object-oriented programming (OOP)<a class="headerlink" href="#object-oriented-programming-oop" title="Permalink to this headline">¶</a></h2>
 <p>A method of programing that bundles behaviors and properties into objects.
 The method of programming is supported by Python.</p>
 <p>For our example we will create objects that represent a person.   Each of these objects will have three properties: (1)  name (2) a (3) eye color and two behaviors: (1)  greet and (2) respond,</p>
 <p>First we create a class.    A class is a blueprint for the an object</p>
-<dl class="simple">
-<dt>class Person:</dt><dd><p>pass</p>
-</dd>
-</dl>
+<p><strong>A Simple Class</strong></p>
+<blockquote>
+<div><p>code::
+class ClassName:</p>
+<blockquote>
+<div><p>body</p>
+</div></blockquote>
+</div></blockquote>
 <p>It is standard practice to use a capital letter for naming a class.</p>
+<p><strong>A Class with attributes and methods</strong></p>
 <p>Now we define our properties and set the initial state by defining the .__init__( )</p>
-<p>#  You can find a nice explanation of Python classes here.
-# In fact, I highly recommend Real Python as a great website for learning Python.</p>
+<p>More generally a class has a form like this:</p>
 <dl>
-<dt>class Person:</dt><dd><p># Class attribute
-species = ‘human’</p>
-<dl class="simple">
-<dt>def __str__(self):</dt><dd><p>return f”{self.name} is a {self}.”</p>
-</dd>
-</dl>
+<dt>class ClassName:</dt><dd><p># Class attribute
+(statement)</p>
 <p># instance attributes
 def __init__(self, name, age):</p>
 <blockquote>
-<div><p>self.name = name
-self.age = age</p>
+<div><p>self.attr1 = value</p>
 </div></blockquote>
+<p>.</p>
 <p># instance methods
-def greets(self, phrase):</p>
+def method1(self, para1):</p>
 <blockquote>
-<div><p>return f’{self.name} says, {phrase}.’</p>
+<div><p>body</p>
 </div></blockquote>
-<dl class="simple">
-<dt>def responds(self, phrase):</dt><dd><p>return f’{self.name}, replies {phrase}.’</p>
+<p>.</p>
 </dd>
 </dl>
-</dd>
+<p>Here is an example:</p>
+<p><strong>Class Inheritance</strong></p>
+<dl>
 <dt>class Female(Person):</dt><dd><p>gender = ‘female’
-likes = ‘shoes’</p>
-<dl class="simple">
-<dt>def responds(self, phrase=’get lost’):</dt><dd><p>return super().responds(phrase)</p>
-</dd>
-</dl>
+likes = ‘movies’</p>
+<p>def responds(self, phrase=’get lost’):
+return super().responds(phrase)</p>
 </dd>
 <dt>class Male(Person):</dt><dd><p>gender = ‘male’
-likes = ‘football’</p>
+likes = ‘sports’</p>
 <dl class="simple">
 <dt>def greets(self, phrase=’what's your sign’):</dt><dd><p>return super().greets(phrase)</p>
 </dd>
 </dl>
 </dd>
 </dl>
-<p>There is an image in my notes that could be used here.</p>
+</div>
 </div>
 
 
@@ -219,12 +222,15 @@ likes = ‘football’</p>
 <li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#object-oriented-programming-oop">Object-oriented programming (OOP)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
@@ -262,7 +268,7 @@ likes = ‘football’</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Built-in%20Libraries.html" title="Built-in Libraries"
+          <a href="Exercises.html" title="Exercises"
              >next</a> |</li>
         <li class="right" >
           <a href="Generators.html" title="Generators"
