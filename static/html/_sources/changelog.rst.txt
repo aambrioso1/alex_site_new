@@ -108,18 +108,30 @@ it easy to update.   Simple copy Sphinx's html folder to the static folder.
 * Proofread to Loops
 * Update website
 
-7/8/2021
+7/13/2021
 --------
 * Classes
 * Proofread to Classes
 * Update website
 
-7/9/2021
+7/14/2021
 --------
+* More on Classes
 * Exercises
 * Proofread
 * Update website
 
+7/15/2021
+* More Exercises
+* Proofread
+* Update website
 
+7/16/2021
+* Built-in Libraries
+* Proofread
+* Update website
 
-
+7/17/2021
+* Built-in Libraries
+* Proofread
+* Update website

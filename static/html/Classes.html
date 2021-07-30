@@ -52,6 +52,11 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
@@ -64,6 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#object-oriented-programming-oop">Object-oriented programming (OOP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-customization">Class Customization</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
@@ -145,64 +151,102 @@
             
   <div class="section" id="classes">
 <h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p>defining a class</p></li>
-<li><p>class attributes</p></li>
-<li><p>class methods</p></li>
-<li><p>Why?</p></li>
-<li><p>class inheritance</p></li>
-</ul>
 <div class="section" id="object-oriented-programming-oop">
 <h2>Object-oriented programming (OOP)<a class="headerlink" href="#object-oriented-programming-oop" title="Permalink to this headline">¶</a></h2>
-<p>A method of programing that bundles behaviors and properties into objects.
-The method of programming is supported by Python.</p>
-<p>For our example we will create objects that represent a person.   Each of these objects will have three properties: (1)  name (2) a (3) eye color and two behaviors: (1)  greet and (2) respond,</p>
-<p>First we create a class.    A class is a blueprint for the an object</p>
-<p><strong>A Simple Class</strong></p>
-<blockquote>
-<div><p>code::
-class ClassName:</p>
-<blockquote>
-<div><p>body</p>
-</div></blockquote>
-</div></blockquote>
-<p>It is standard practice to use a capital letter for naming a class.</p>
-<p><strong>A Class with attributes and methods</strong></p>
-<p>Now we define our properties and set the initial state by defining the .__init__( )</p>
-<p>More generally a class has a form like this:</p>
-<dl>
-<dt>class ClassName:</dt><dd><p># Class attribute
-(statement)</p>
-<p># instance attributes
-def __init__(self, name, age):</p>
-<blockquote>
-<div><p>self.attr1 = value</p>
-</div></blockquote>
-<p>.</p>
-<p># instance methods
-def method1(self, para1):</p>
-<blockquote>
-<div><p>body</p>
-</div></blockquote>
-<p>.</p>
-</dd>
-</dl>
-<p>Here is an example:</p>
+<p>Object-oriented programming is a method of programing that bundles behaviors and properties into objects.  OOP is supported by Python.   A class is a blueprint for an object.  In this section we will show how to define a class, give the class attributes and methods, and use class inheritance.</p>
+<p>A class has a form like this:</p>
+<p>..code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+  <span class="c1"># Class attribute</span>
+  <span class="p">(</span><span class="n">statement</span><span class="p">)</span>
+
+  <span class="c1"># instance attributes</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">attr1</span> <span class="o">=</span> <span class="n">value</span>
+  <span class="o">.</span>
+  <span class="o">.</span>
+  <span class="o">.</span>
+  <span class="c1"># instance methods</span>
+  <span class="k">def</span> <span class="nf">method1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">para1</span><span class="p">):</span>
+      <span class="n">body</span>
+  <span class="o">.</span>
+  <span class="o">.</span>
+  <span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>A Class with Attributes and Methods</strong></p>
+<p>For our example we will create object that represent a person.   Each of these objects wiil have two attributes and two methods.</p>
+<p>It is standard practice to use a capital letter for <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#class-names">naming a class</a>.</p>
+<p>We define our properties and set the initial state by defining the .__init__( )</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="c1"># Class attribute</span>
+    <span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;human&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is a </span><span class="si">{</span><span class="bp">self</span><span class="si">}</span><span class="s2">.&quot;</span>
+
+    <span class="c1"># instance attributes</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+    <span class="c1"># instance methods</span>
+    <span class="k">def</span> <span class="nf">greets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phrase</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> says, </span><span class="si">{</span><span class="n">phrase</span><span class="si">}</span><span class="s1">.&#39;</span>
+
+    <span class="k">def</span> <span class="nf">responds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phrase</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">, replies </span><span class="si">{</span><span class="n">phrase</span><span class="si">}</span><span class="s1">.&#39;</span>
+</pre></div>
+</div>
 <p><strong>Class Inheritance</strong></p>
-<dl>
-<dt>class Female(Person):</dt><dd><p>gender = ‘female’
-likes = ‘movies’</p>
-<p>def responds(self, phrase=’get lost’):
-return super().responds(phrase)</p>
-</dd>
-<dt>class Male(Person):</dt><dd><p>gender = ‘male’
-likes = ‘sports’</p>
-<dl class="simple">
-<dt>def greets(self, phrase=’what's your sign’):</dt><dd><p>return super().greets(phrase)</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Female</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;female&#39;</span>
+    <span class="n">likes</span> <span class="o">=</span> <span class="s1">&#39;movies&#39;</span>
+
+    <span class="k">def</span> <span class="nf">responds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phrase</span><span class="o">=</span><span class="s1">&#39;get lost&#39;</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">responds</span><span class="p">(</span><span class="n">phrase</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Male</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;male&#39;</span>
+    <span class="n">likes</span> <span class="o">=</span> <span class="s1">&#39;sports&#39;</span>
+
+    <span class="k">def</span> <span class="nf">greets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phrase</span><span class="o">=</span><span class="s1">&#39;what</span><span class="se">\&#39;</span><span class="s1">s your sign&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">greets</span><span class="p">(</span><span class="n">phrase</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="class-customization">
+<h2>Class Customization<a class="headerlink" href="#class-customization" title="Permalink to this headline">¶</a></h2>
+<p>A class in Python can implement certain operations by defining methods with <a class="reference external" href="https://docs.python.org/3/reference/datamodel.html#special-method-names">special method names</a>.</p>
+<ul class="simple">
+<li><p>__repr__</p></li>
+<li><p>__str__</p></li>
+<li><p>define an ordering by defining __gt__ and __ge__</p></li>
+</ul>
+<p><a class="reference external" href="https://docs.python.org/3/reference/datamodel.html#object.__repr__">__repr__</a>:  Called by the repr() built-in function to compute the “official” string representation of an object.
+<a class="reference external" href="https://docs.python.org/3/reference/datamodel.html#object.__str__">__str__</a>:   Called by str(object) and the built-in functions format() and print() to compute the “informal”
+or nicely printable string representation of an object.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Order</span><span class="p">:</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Ordering&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>
+
+    <span class="k">def</span> <span class="fm">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">position</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">&lt;=</span> <span class="n">other</span><span class="o">.</span><span class="n">position</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;Order(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="si">}</span><span class="s1">)&gt;&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\&quot;</span><span class="s1">Order(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="si">}</span><span class="s1">)</span><span class="se">\&quot;</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -216,6 +260,11 @@ likes = ‘sports’</p>
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
@@ -228,6 +277,7 @@ likes = ‘sports’</p>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#object-oriented-programming-oop">Object-oriented programming (OOP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-customization">Class Customization</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>

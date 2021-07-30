@@ -52,6 +52,11 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
@@ -62,6 +67,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Generators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#iterator">Iterator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator">Generator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator-iterator">Generator iterator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator-comprehension">Generator comprehension</a></li>
@@ -149,35 +155,37 @@
 <h1>Generators<a class="headerlink" href="#generators" title="Permalink to this headline">¶</a></h1>
 <p>A generator is a function that returns an object we can interate over.
 A generator produces an arbitarily long sequence of values with finite memory.</p>
-<p>In Python, a generator can be thought of as an iterator that contains a frozen stack frame.</p>
+<div class="section" id="iterator">
+<h2>Iterator<a class="headerlink" href="#iterator" title="Permalink to this headline">¶</a></h2>
 <p>An <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterator">iterator</a> is an object representing a stream of data.</p>
+</div>
 <div class="section" id="generator">
 <h2>Generator<a class="headerlink" href="#generator" title="Permalink to this headline">¶</a></h2>
-<p>A function which returns a generator iterator. It looks like a normal function except that it contains yield expressions for producing a series of values usable in a for-loop or that can be retrieved one at a time with the next() function.</p>
+<p>A function that returns a generator iterator. It looks like a normal function except that it contains yield expressions for producing a series of values usable in a for-loop or that can be retrieved one at a time with the next() function.  A generator can be thought of as an iterator that contains a frozen stack frame.</p>
 </div>
 <div class="section" id="generator-iterator">
 <h2>Generator iterator<a class="headerlink" href="#generator-iterator" title="Permalink to this headline">¶</a></h2>
 <p>An object created by a generator function.   Each yield temporarily suspends processing, remembering current stack.  When the generator iterator resumes, it picks up where it left off.</p>
 <p>For example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">odd_number_generator</span><span class="p">():</span> <span class="c1"># Generator</span>
-<span class="gp">... </span>   <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">odd_number_generator</span><span class="p">():</span> <span class="c1"># Generator for odd numbers</span>
+<span class="gp">... </span>   <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="gp">... </span>   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="gp">... </span>       <span class="k">yield</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">num</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="gp">... </span>       <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">odd_number</span> <span class="o">=</span> <span class="n">odd_number_generator</span> <span class="c1"># Generator iterator</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span> <span class="c1"># yields first number and saves current stack</span>
 <span class="go">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span> <span class="c1"># yields second number and saves current stack</span>
 <span class="go">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">odd_number</span><span class="p">)</span> <span class="c1"># yields the next number</span>
 <span class="go">5</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="generator-comprehension">
 <h2>Generator comprehension<a class="headerlink" href="#generator-comprehension" title="Permalink to this headline">¶</a></h2>
-<p>An expression that returns an iterator. The syntax is the same as for a list comprehension except it uses parentheses instead of brackets.</p>
+<p>An expression that returns an generator iterator. The syntax is the same as for a list comprehension except it uses parentheses instead of brackets.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">even_lc</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span> <span class="c1"># List comprehension</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">even_gc</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="c1"># Generator comprehension create an iterator</span>
@@ -208,6 +216,11 @@ A generator produces an arbitarily long sequence of values with finite memory.</
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alex’s Python Book</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#index-and-search">Index and Search</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Installing%20Python.html">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
@@ -218,6 +231,7 @@ A generator produces an arbitarily long sequence of values with finite memory.</
 <li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Generators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#iterator">Iterator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator">Generator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator-iterator">Generator iterator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#generator-comprehension">Generator comprehension</a></li>
