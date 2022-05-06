@@ -7,7 +7,7 @@ Alex's Python Book
 Introduction
 ------------
 
-We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  Proficiency in a programming language give the user control over the information and technology that is every present in today's society.   
+We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  Proficiency in a programming language gives the programmer control over information and technology.  
 
 The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in fields as diverse as natural language processing and oceanography are using Python and its libraries to support their work.   I hope that this book can help the reader to leverage the power of the algorithm through the Python.
 

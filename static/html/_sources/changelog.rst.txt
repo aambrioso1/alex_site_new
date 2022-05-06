@@ -10,6 +10,9 @@ Changelog
 
 website folder:  cd "flask/websites/my website/alex_site_new"
 
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
 6/13/2021
 ---------
 * Added extension for copying code
@@ -115,23 +118,26 @@ it easy to update.   Simple copy Sphinx's html folder to the static folder.
 * Update website
 
 7/14/2021
---------
+---------
 * More on Classes
 * Exercises
 * Proofread
 * Update website
 
 7/15/2021
+---------
 * More Exercises
 * Proofread
 * Update website
 
-7/16/2021
-* Built-in Libraries
+7/30/2021
+---------
+* The Standard Library
 * Proofread
 * Update website
 
-7/17/2021
-* Built-in Libraries
+7/31/2021
+---------
+* Continue work on the Standard Library
 * Proofread
 * Update website
