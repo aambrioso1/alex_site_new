@@ -69,11 +69,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">The Python Standard Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html#id1">Pygame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
@@ -224,45 +226,37 @@
 <span class="go">AlexxelA</span>
 </pre></div>
 </div>
-<p>Example for later sections after we discussing looping</p>
+<p>Here is an example for a later section after we discuss looping.</p>
 <p>Problem
-We are given the following dictionary: with customer numbers as the keys and lists containing a customer name and last month’s spending for the values
-Find the average amount spent per customer.:</p>
+We are given the following dictionary.  Customer numbers serves as the keys and lists containing a customer name and last month’s spending are the values.
+Find the average amount spent per customer last month.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;001&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alex&#39;</span><span class="p">,</span> <span class="mf">100.00</span><span class="p">],</span>
 <span class="s1">&#39;314&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sonya&#39;</span><span class="p">,</span> <span class="mf">25.25</span><span class="p">],</span>
 <span class="s1">&#39;174&#39;</span><span class="p">:[</span><span class="s1">&#39;Erika&#39;</span><span class="p">,</span> <span class="mf">30.91</span><span class="p">],</span>
 <span class="s1">&#39;521&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Anthony&#39;</span><span class="p">,</span> <span class="mf">34.56</span><span class="p">],</span>
 <span class="s1">&#39;231&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Joseph&#39;</span><span class="p">,</span> <span class="mf">13.76</span><span class="p">]</span>
 <span class="p">}</span>
-
-<span class="n">The</span> <span class="n">keys</span> <span class="n">are</span> <span class="n">customer</span> <span class="n">numbers</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">values</span> <span class="n">are</span> <span class="n">lists</span> <span class="n">containing</span> <span class="n">a</span> <span class="n">customer</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">last</span> <span class="n">month</span><span class="s1">&#39;s spending. Find the average amount spend by the customers last month.</span>
 </pre></div>
 </div>
-<p>The following exercises are similar to problems found in ‘CodeWars &lt;<a class="reference external" href="https://www.codewars.com/">https://www.codewars.com/</a>&gt;`_.   CodeWars is an excellent website for practicing to code.   They have lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written which is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about checking code.</p>
-<ul class="simple">
-<li><p>Problem 1</p></li>
-</ul>
-<p>Write a function, <cite>counter(string)</cite>, that counts all of the left and right parenthesis in a string and outputs a list of two integers for these counts.
+<p>The exercises that follow are similar to problems found in <a class="reference external" href="https://www.codewars.com/">CodeWars</a>.   CodeWars is an excellent website for practicing to code.   They have lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written which is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about testing code.</p>
+<p><strong>Problem 1:</strong>
+Write a function, <cite>counter(string)</cite>, that counts all of the left and right parenthesis in a string and outputs a list of two integers for these counts.
 For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">counter</span><span class="p">(</span><span class="s1">&#39;)))&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">counter</span><span class="p">(</span><span class="s1">&#39;Python(coding(is)fun!&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Problem 2</p></li>
-</ul>
-<p>Write a function, <cite>trifib(n)</cite>, that takes a single positive integer, n &lt;= 30, as input and returns a single integer.   The function generates the nth term in this sequence:   1, 1, 1, 3, 5, 9, 17, ….  The first three terms are 1 and after that each term is the sum of the previous three terms.   For example:</p>
+<p><strong>Problem 2:</strong>
+Write a function, <cite>trifib(n)</cite>, that takes a single positive integer, n &lt;= 30, as input and returns a single integer.   The function generates the nth term in this sequence:   1, 1, 1, 3, 5, 9, 17, ….  The first three terms are 1 and after that each term is the sum of the previous three terms.   For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trifib</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># by definition</span>
 <span class="n">trifib</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">1</span> <span class="c1"># by definition</span>
 <span class="n">trifib</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">3</span>   <span class="c1"># because 1 + 1 + 1 = 3</span>
 <span class="n">trifib</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>  <span class="o">=</span>  <span class="mi">31</span> <span class="c1"># because 5 + 9 + 17 = 31</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Problem 3</p></li>
-</ul>
-<p>Write a Python function called <cite>sum_of_thirds(int)</cite> that takes a positive integer divides it by three, drops the remainder and repeats this process with each divisor. The function then returns the sum of all the quotients. For example:</p>
+<p><strong>Problem 3:</strong>
+Write a Python function called <cite>sum_of_thirds(int)</cite> that takes a positive integer divides it by three, drops the remainder and repeats this process with each divisor. The function then returns the sum of all the quotients. For example:</p>
 <p>20 creates the sequence: 6, 2 and the sum is 6 + 2 = 8. So:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_of_thirds</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">=</span> <span class="mi">8</span>
 </pre></div>
@@ -300,11 +294,13 @@ For example:</p>
 <li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">Built-in Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">The Python Standard Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html#id1">Pygame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>

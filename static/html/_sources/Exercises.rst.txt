@@ -4,10 +4,10 @@ Exercises
 Follow my table of contents
 
 * Installing Python  
-How does you find the version of Python you are running?
+How do you find the version of Python you are running?
 How do you assess the REPL from the command line?  How do you leave the REPL?
 
-* Basic Mah
+* Basic Math
 * string
 * list
 * set

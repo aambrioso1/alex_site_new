@@ -26,7 +26,7 @@ For example:
  ...        yield 2 * num - 1
  ...        num += 1
  ...
- >>> odd_number = odd_number_generator # Generator iterator
+ >>> odd_number = odd_number_generator() # Generator iterator
  >>> next(odd_number) # yields first number and saves current stack
  1
  >>> next(odd_number) # yields second number and saves current stack
