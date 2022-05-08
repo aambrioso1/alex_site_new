@@ -47,7 +47,7 @@ def projects():
 
 """
 @app.route('/pyscript')
-def projects():
+def pyscript():
 	return render_template('compute_pi_script.html')
 """
 
@@ -90,6 +90,32 @@ def user(name):
 def go_to_my_book(path='index.html'):
     return app.send_static_file(path)
 
+
+@app.route('/pyscript')
+def pyscript(path='compute_pi_script.html'):
+	return app.send_static_file(path)
+"""
+
+@app.route('/pyscript')
+def pyscript():
+	return f'<head> \
+    	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> \
+   		<script defer src="https://pyscript.net/alpha/pyscript.js"></script> \
+		</head> \
+		<body> \
+      	<py-script> \
+		print("Let\'s compute π:") \
+		def wallis(n): \
+    		pi = 2 \
+    		for i in range(1,n): \
+        		pi *= 4 * i ** 2 / (4 * i ** 2 - 1) \
+    		return pi \
+		pi = wallis(100) \
+		s = f"π is approximately {pi:.3f}" \
+		print(pi) \
+      	</py-script> \
+  		</body>'
+"""
 """
 This SO answer was helpful:
 https://stackoverflow.com/questions/14912787/sphinx-documentation-inside-a-flask-running-web-application
