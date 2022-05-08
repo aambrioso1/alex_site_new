@@ -23,7 +23,7 @@ def internal_server_error(e):
 @app.route('/', methods=['GET','POST'])
 def index():
 	image_file = url_for('static', filename='img/first_algorithm.jpg')
-	return render_template('index.html', image_file = image_file)
+	return render_template('main_index.html', image_file = image_file)
 """
 @app.route('/about')
 def about():
