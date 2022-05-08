@@ -45,6 +45,10 @@ def desmos():
 def projects():
 	return render_template('projects.html')
 
+@app.route('/pyscript')
+def projects():
+	return render_template('compute_pi_script.html')
+
 # Hockey API added to the site	
 import requests, json
 
