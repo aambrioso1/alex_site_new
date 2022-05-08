@@ -34,7 +34,7 @@ You can follow the links to find information on downloading and using each one.
 
 You can even run Python with nothing but your favorite browser at `PythonAnywhere <https://www.pythonanywhere.com/>`_.
 
-Another popular way to run Python is using Jupyter notebooks.  A Jupyter notebook provides the user with an interactive environment that allows him to integrate text, code, and data. Jupyter notebooks are available with the Anaconda distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.   The download link provided above for Anaconda will include Jupyter notebooks.
+Another popular way to run Python is using Jupyter notebooks.  A Jupyter notebook provides the user with an interactive environment that allows him to integrate text, code, and data. Jupyter notebooks are available with the Anaconda distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.   The link provided above will take you to a page where you can download the Anaconda Individual Edition.
 
 As you work through the book you should have a way to write and run Python code.   If you make an effort to run my examples, try the exercises, and experiment on your own you will learn Python quickly.
 

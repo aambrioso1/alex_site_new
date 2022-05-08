@@ -16,7 +16,7 @@ Functions
 - \*args
 - \*\*kwargs
 
-We spent time learning basic Python types and operations and working with the REPL.   It's time to write some programs.   Let's write our first program and learn an important, maybe the most important, built-in function.   Python has many built-in functions to help make writing programs easier.
+We spent time learning basic Python types and operations and working with the REPL.   It's time to write some programs.   Let's write our first program and learn an important, maybe the most important, built-in function: the print function.   Python has many built-in functions to help make writing programs easier.
 
 Open up your text editor or IDE and type-in or copy the following:::
 
@@ -48,7 +48,7 @@ Here is another example that takes the average of three numbers::
 >>> print(average(1, 3, 5))
 3.0
 
-Here is another example that find the median of four numbers::
+Here is another example that finds the median of four numbers::
 
  def median(a, b, c, d):
      lst = []
@@ -62,7 +62,7 @@ Here is another example that find the median of four numbers::
 >>> print(median(10, 3, 8, 5))
 6.5
 
-We will learn better ways to build lists soon. As is, the code shows off some of the things we have learned about lists so far.
+We will learn better ways to build lists soon. As it is, the code shows off some of the things we have learned about lists so far.
 
 Define a function that "mirrors" a word::
 
@@ -79,7 +79,7 @@ AlexxelA
 Here is an example for a later section after we discuss looping.
 
 Problem
-We are given the following dictionary.  Customer numbers serves as the keys and lists containing a customer name and last month's spending are the values.   
+We are given the following dictionary.  Customer numbers serve as the keys and lists containing a customer name and last month's spending are the values.   
 Find the average amount spent per customer last month.::
 
  customers = {'001': ['Alex', 100.00], 
@@ -89,14 +89,14 @@ Find the average amount spent per customer last month.::
  '231': ['Joseph', 13.76]
  }
 
-The exercises that follow are similar to problems found in `CodeWars <https://www.codewars.com/>`_.   CodeWars is an excellent website for practicing to code.   They have lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written which is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about testing code.
+The exercises that follow are similar to problems found in `CodeWars <https://www.codewars.com/>`_.   CodeWars is an excellent website for practicing to code.   The website has lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written.   This is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about testing code.
 
 **Problem 1:** 
 Write a function, `counter(string)`, that counts all of the left and right parenthesis in a string and outputs a list of two integers for these counts.
 For example::
  counter('(') = [1, 0]
  counter(')))') = [0, 3]
- counter('Python(coding(is)fun!') = [2, 1]
+ counter('Python(coding(is)fun!') = [2, 2]
 
 **Problem 2:** 
 Write a function, `trifib(n)`, that takes a single positive integer, n <= 30, as input and returns a single integer.   The function generates the nth term in this sequence:   1, 1, 1, 3, 5, 9, 17, ....  The first three terms are 1 and after that each term is the sum of the previous three terms.   For example::

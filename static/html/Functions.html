@@ -165,7 +165,7 @@
 <li><p>*args</p></li>
 <li><p>**kwargs</p></li>
 </ul>
-<p>We spent time learning basic Python types and operations and working with the REPL.   It’s time to write some programs.   Let’s write our first program and learn an important, maybe the most important, built-in function.   Python has many built-in functions to help make writing programs easier.</p>
+<p>We spent time learning basic Python types and operations and working with the REPL.   It’s time to write some programs.   Let’s write our first program and learn an important, maybe the most important, built-in function: the print function.   Python has many built-in functions to help make writing programs easier.</p>
 <p>Open up your text editor or IDE and type-in or copy the following::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
 </pre></div>
@@ -197,7 +197,7 @@
 <span class="go">3.0</span>
 </pre></div>
 </div>
-<p>Here is another example that find the median of four numbers:</p>
+<p>Here is another example that finds the median of four numbers:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">median</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
     <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -212,7 +212,7 @@
 <span class="go">6.5</span>
 </pre></div>
 </div>
-<p>We will learn better ways to build lists soon. As is, the code shows off some of the things we have learned about lists so far.</p>
+<p>We will learn better ways to build lists soon. As it is, the code shows off some of the things we have learned about lists so far.</p>
 <p>Define a function that “mirrors” a word:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mirror_string</span><span class="p">(</span><span class="s1">&#39;word&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;worddrow&#39;</span>
 </pre></div>
@@ -228,7 +228,7 @@
 </div>
 <p>Here is an example for a later section after we discuss looping.</p>
 <p>Problem
-We are given the following dictionary.  Customer numbers serves as the keys and lists containing a customer name and last month’s spending are the values.
+We are given the following dictionary.  Customer numbers serve as the keys and lists containing a customer name and last month’s spending are the values.
 Find the average amount spent per customer last month.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;001&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alex&#39;</span><span class="p">,</span> <span class="mf">100.00</span><span class="p">],</span>
 <span class="s1">&#39;314&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sonya&#39;</span><span class="p">,</span> <span class="mf">25.25</span><span class="p">],</span>
@@ -238,13 +238,13 @@ Find the average amount spent per customer last month.:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The exercises that follow are similar to problems found in <a class="reference external" href="https://www.codewars.com/">CodeWars</a>.   CodeWars is an excellent website for practicing to code.   They have lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written which is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about testing code.</p>
+<p>The exercises that follow are similar to problems found in <a class="reference external" href="https://www.codewars.com/">CodeWars</a>.   CodeWars is an excellent website for practicing to code.   The website has lots of well-defined problems for a wide variety of programming languages.  THe problems vary in difficulty.   Once you solve a problem you are able to see the code others have written.   This is useful in improving your skill at reading and writing code.  You can also write your own problems and learn about testing code.</p>
 <p><strong>Problem 1:</strong>
 Write a function, <cite>counter(string)</cite>, that counts all of the left and right parenthesis in a string and outputs a list of two integers for these counts.
 For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">counter</span><span class="p">(</span><span class="s1">&#39;)))&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">counter</span><span class="p">(</span><span class="s1">&#39;Python(coding(is)fun!&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">counter</span><span class="p">(</span><span class="s1">&#39;Python(coding(is)fun!&#39;</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><strong>Problem 2:</strong>

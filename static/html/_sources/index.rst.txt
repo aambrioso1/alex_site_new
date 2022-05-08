@@ -11,13 +11,12 @@ We live in a unique time in that the ability to program is accessible to everyon
 
 The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in fields as diverse as natural language processing and oceanography are using Python and its libraries to support their work.   I hope that this book can help the reader to leverage the power of the algorithm through the Python.
 
-For the past few years I have been learning to program in Python and sharing what I have learned with students and colleagues.   In this book I have written out what I have learned as a good resource for myself and anyone interested in learning or teaching Python.
+For the past few years I have been learning to program in Python and sharing what I have learned with students and colleagues.   In this book I recorded what I have learned to serve as resource for myself and anyone else interested in learning or teaching Python.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents
 
-   index
    Installing Python
    Basic Math
    Variables and Basic Data Types
