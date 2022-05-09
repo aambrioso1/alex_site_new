@@ -1,47 +1,181 @@
-Alex's Python Book
-==================
-
-.. Alex's Python Book documentation master file, created by
+.. Alex's Python Course documentation master file, created by
    sphinx-quickstart on Sun May 30 22:13:31 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+   Notes:  Start with Building Documentation with Sphinx
+   (1) Start virtual environment
+   (2)  $ make html
 
-Introduction
-------------
+   Some notes for me:
+   * Following Mariatta's excellent tutorial:
+   https://sphinx-intro-tutorial.readthedocs.io/en/latest/index.html  
+   
 
-We live in a unique time in that the ability to program is accessible to everyone through open source resources.  Open source programming languages, and their associated libraries and communities, can enhance work in any occupation or field of study.  Proficiency in a programming language gives the programmer control over information and technology.  
+   *Taking notes in OneNote Programming/Sphinx Tutorial
 
-The Python programming language is open source, easy to learn, and powerful.   It has a large community that provides support for work in every academic discipline.    Researchers in fields as diverse as natural language processing and oceanography are using Python and its libraries to support their work.   I hope that this book can help the reader to leverage the power of the algorithm through the Python.
+   *Currently here:  https://sphinx-intro-tutorial.readthedocs.io/en/latest/sphinx_first_steps.html#adding-more-pages
 
-For the past few years I have been learning to program in Python and sharing what I have learned with students and colleagues.   In this book I recorded what I have learned to serve as resource for myself and anyone else interested in learning or teaching Python.
+   * Extension for autobuilding, copying, and themes can be found here:
+   For now I will only add the autobuilding extension as it speeds up the build processs.
+
+Alex's Python Course!
+================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents
 
-   Installing Python
-   Basic Math
-   Variables and Basic Data Types
-   Boolean and Comparison Operators
-   Other Operators
-   Functions
-   Conditional Statements
-   Loops
-   Comprehension
-   Generators
-   Classes
-   Exercises
-   Built-in Libraries
-   Third-party Libraries
-   Applications
-   Other Python Books
-   Other Stuff
-   git
-   Notes
-   Changelog
+   Introduction
+   changelog
 
-Index and Search
-----------------
+Installing Python
+-----------------
+* Python.org
+* Anaconda.org
+* Pycharm
+* Visual Studio Code
 
-* :ref:`search`
+Editors
+-------
+* Sublime Text
+* Notepad
+* Pycharm
+* Visual Studio Code
+* Idle (comes with Python)
+* Spyder (comes with Anaconda distribution)
+
+Simple Mathematical Computations
+--------------------------------
+* mathematical operations: addtion, subtraction, multiplication, division, exponentiation
+* floor division
+* modulus
+
+
+Basic Data Structures
+---------------------
+* Computation with basic data stuctures
+* type()
+* common methods
+* slicing
+
+Exercises
+---------
+* math
+* complex number
+* string
+* list
+* set
+* tuple
+* boolean
+* dictionary
+* slicing
+
+
+Logical Operators
+-----------------
+* not
+* and
+* or
+
+Conditional Statements
+----------------------
+* if
+* if/else
+* if/elif
+
+
+Loops
+-----
+* while
+* range
+* for
+
+Comprehension
+-------------
+* defining a comprehension
+* conditional statements and comprehension
+* dictionary comprehension
+
+Functions
+---------
+* defining a function
+* examples
+* doc strings
+* Why?
+
+Generators
+----------
+* defining a generator
+* examples
+* Why?
+
+Classes
+-------
+* defining a class
+* class attributes
+* class methods
+* Why?
+* class inheritance
+
+
+Built-in Libraries
+------------------
+* math
+* os
+* sys
+* collections
+* re (regular expressions)
+* Decimals
+* Fractions
+
+
+Third-party Libraries
+---------------------
+* virtual environments
+* The open-source community
+* installing third-party packages - pip
+* matplotlib
+* numpy
+* pandas
+* flask
+* requests
+* plotly
+* sympy
+* selenium
+* pygame
+
+
+Applications
+------------
+* finding prime numbers
+* file management
+* adjusting phone and email formats with regular expressions
+* find words in sentences with regular expressions
+* demonstrate Zipf's law
+* json data and NOAA API
+* CodeWars
+* web scraping
+* speech recognition
+* selenium
+* A simple flask app
+
+Other stuff
+-----------
+* Stack Overflow
+* Real Python
+* Talk Python to Me
+
+Books
+-----
+* Automate the Boring Stuff
+* Effective Python
+* Flask Mega-Tutorial
+
+
+
+Indices and tables
+------------------
+
 * :ref:`genindex`
-
-
+* :ref:`modindex`
+* :ref:`search`
