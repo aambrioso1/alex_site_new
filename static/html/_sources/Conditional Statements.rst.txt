@@ -1,0 +1,166 @@
+Conditional Statements
+======================
+
+Conditional statements are used to control the execution of code.
+
+Forms of the conditional
+------------------------
+
+The `if` form
+-------------
+
+.. code ::
+
+ if (condition):
+     (body)
+
+Let's write an expression to decide if we should go to the beach.   The expression will have two conditions: 'weather' that is true if the weather is good and false if the weather is bad and 'sat' which is true if it is Saturday and false otherwise.   We go to the beach if the weather is good AND it is Saturday.   The expression returns the string 'Let\'s go to the beach!'.   
+
+.. code ::
+
+>>> weather = True
+>>> sat = True
+>>> if weather and sat:
+>>>     print('Let/'s go to the beach!')
+"Let's go to the beach!"
+ 
+>>> weather = True
+>>> sat = True    
+>>> if weather:
+>>>     print('Let/'s go to the beach!')
+>>>
+
+Note the use of a forward-slash here (/).   This is called an escape character.   Since Python interprets a quote (') as a character that delinates a string, we need a way to let the interpeter know that we want to print the single quote character.   The backslash tells the intepreter to escape the usual meaning of the symbol that follows it.  Another way to deal with this problem is to use double quotes to delineate the string:  "Let's go to the beach".  The single quote will be interpreted as a character. 
+
+The `if/else` form
+------------
+
+.. code::
+
+ if (condition):
+     (body)
+ else (condition):
+     (body)
+
+Let's modify the previous expression that we return the string 'Let's stay home.' if the weather is bad (weather = False).
+
+.. code::
+
+ weather = False
+ sat = True
+ if weather and sat:
+     'Let/'s go to the beach!'
+ else:  'Let's stay home'
+ 
+ weather = True
+ sat = True    
+ if weather:
+     return 'Let/'s go to the beach!'
+ else:  'Let's stay home'
+
+The `if/elif/else` form
+-----------------------
+
+.. code::
+
+ if (condition):
+     (body)
+ elif (condition):
+     (body)
+ elif (condition):
+     (body)
+ else:
+     (body)
+
+Now we will add some other options when we can't go to the beach.  If it's Saturday we will grab an umbrella and go out to eat.   Also, so that we can test on the different conditions, we will define a function, `todo(weather, sat)`, that takes our two Boolean parameters, weather and sat, and outputs a string the tells us what we should do.   
+
+.. code::
+
+ def todo(weather, sat):
+     if weather and sat:
+         return 'Let\'s go to the beach!'
+     elif sat:
+         return 'Let\'s grab an umbrella and go out to eat!'
+     else:  
+         return 'Let\'s stay home.'
+ 
+ >print(todo(True, True))
+ Let's go to the beach!
+ >print(todo(False, True))
+ Let's grab an umbrella and go out to eat!
+ >print(todo(True, False))
+ Let's stay home.
+
+
+	
+The one line 'if' statement
+---------------------------
+
+.. code ::
+
+ if (condition): (body) 
+
+or
+
+.. code ::
+
+ if (condition): (statement1); (statement2); (statement3)
+
+We give an example of each:
+
+.. code ::
+
+ >>> p = False
+ >>> if not p: print('p is false')
+ p is false
+ >>> if not p: print(10*'*'); print('p is false'); print(10*'*')
+ **********
+ p is false
+ **********
+
+The ternary operator
+--------------------
+
+.. code ::
+
+ (statement1) if (conditional) else (statment2)
+
+An example:
+
+.. code ::
+
+ p = True
+ 'p is false' if p else 'p is true'
+
+More examples
+-------------
+
+.. code :: 
+
+>>>  True == False
+False
+
+>>> 3 >= 3
+True
+
+>>> 10 < 9
+False
+
+>>> a = 10
+>>> b = 3
+>>> if a < b:
+. . .    print('Yes it is!')
+>>>
+
+>>> if  a == b:
+. . .  else:
+. . .      print('a != b')
+>>> a != b
+
+>>> if  a == b:
+. . .    print('a == b')
+. . . elif a < b:
+. . .    print('a < b')
+. . . else:
+          print('a > b')
+>>> a > b

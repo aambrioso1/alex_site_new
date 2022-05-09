@@ -1,0 +1,62 @@
+Boolean and Comparison Operators
+================================
+
+**Boolean Operators**
+
+There are three Boolean operators in Python:
+
+- `and`
+- `or`
+- `not`
+
+Here we illustrate that each operator works as you would expect when the arguments are one of the two Boolean types, `True` or `False`.
+
+The `and` operator:
+
+.. code ::
+>>> T = True
+>>> F = False
+>>> F and F
+False
+>>> F and T
+False
+>>> T and F
+False
+>>> T and T
+True
+
+The `or` operator:
+
+.. code ::
+>>> F or F
+False
+>>> F or T
+True
+>>> T or F
+True
+>>> T or T
+True
+
+The `not` operator:
+
+.. code ::
+>>> not F
+True
+>>> not T
+False
+
+Exercise:
+
+Let 'math' represent the statement "I like Math" and 'english' represent the statement "I like English".   Use the Boolean operators to write an expression that represents "I like Math or English but not both." 
+
+Solution::
+
+ (math or english) and not (math and english)
+
+**Comparison Operators**
+
+
+As we shall see later sections, these operators are used to control the flow of a program.   
+
+
+

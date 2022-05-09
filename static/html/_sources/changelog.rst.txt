@@ -1,15 +1,143 @@
 Changelog
 =========
 
-
 6/10/2021
 ---------
 * Changelog for keeping track of all changes.
 * Introduction with text from my sabbatical proposal as a first draft for it. 
-* Installed autobuild into the environment::
+* Installed autobuild into the environment.   To run from the command line input
+>>> sphinx-autobuild . ./_build/html 
 
-    (.env)[../docs]$  sphinx-autobuild . ./_build/html 
+website folder:  cd "flask/websites/my website/alex_site_new"
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 
-6/11/2021
+6/13/2021
 ---------
+* Added extension for copying code
+* Remember linkcheck for checking if links are broken (see extensions)
+* Added draft content for every page!
+
+6/14/2021
+---------
+* complete page on "Installing Python"
+* build a simple flask app to serve the appropriate pages to display the book.
+
+6/15/2021
+---------
+* complete page on "Simple Mathematical Computations"
+
+6/16/2021
+---------
+* complete page on "Generators"
+
+6/23/2021
+---------
+* Add modular arithmetic and change title to "Basic Math"
+* Change "Basic Data Structures" to "Variables and Basic Data Types"
+
+* Complete page on "Basic Data Structures"
+
+6/24/2021
+---------
+* Work on "Boolean Operators"
+* Proofread other stuff
+* Think about the problem with the index page on the website:  https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+6/25/2021
+---------
+* Work on "Conditional Statements"
+* Proofread other stuff
+
+6/27/2021
+---------
+* Added a section for comparison operators and changed title to Boolean and Comparison Operators
+
+6/28/2021
+---------
+* Add examples for comparison operators and conditional statements
+* Fix my website so that the book is in its own folder.  This makes
+it easy to update.   Simple copy Sphinx's html folder to the static folder.
+* Need to resolve the problem with the table of contents.
+
+6/29/2021
+---------
+* Add more content to conditional statements
+* Add content to the section on loops
+* Proofread
+
+6/30/2021
+---------
+* Proofread
+* Add more content to comprehension
+* Proofread
+
+7/1/2021
+--------
+* Completed first draft of comprehension
+* Quick review of generators
+* Proofread
+
+7/2/2021
+--------
+* Add an example of a nested loops to loop section
+* Review comprehension
+* Work on generators
+* Add more content to classes
+* Proofread
+
+7/3/2021
+--------
+* Add more content to exercises
+* Proofread
+
+7/4/2021
+--------
+* Enjoy Independence Day!!!
+
+7/5/2021
+--------
+* Proofread to Variables
+* Update website
+
+7/6/2021
+--------
+* Proofread to Other Operators
+* Update website
+
+7/7/2021
+--------
+* Proofread to Loops
+* Update website
+
+7/13/2021
+--------
+* Classes
+* Proofread to Classes
+* Update website
+
+7/14/2021
+---------
+* More on Classes
+* Exercises
+* Proofread
+* Update website
+
+7/15/2021
+---------
+* More Exercises
+* Proofread
+* Update website
+
+7/30/2021
+---------
+* The Standard Library
+* Proofread
+* Update website
+
+7/31/2021
+---------
+* Continue work on the Standard Library
+* Proofread
+* Update website

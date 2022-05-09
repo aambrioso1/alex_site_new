@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installing Python &#8212; Alex&#39;s Python Book  documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Basic Math" href="Basic%20Math.html" />
+    <link rel="prev" title="Alex’s Python Book" href="index.html" /><link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+         <a href="https://www.python.org/" class="nav-logo">
+             <img src="_static/py.svg" alt="Logo"/>
+         </a>
+        <div class="version_switcher_placeholder"></div>
+        <form id="searchbox" role="search" class="search" action="search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Quick search"/>
+            <input type="submit" value="Go"/>
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">The Python Standard Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html#id1">Pygame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Installing Python.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Basic%20Math.html" title="Basic Math"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Alex’s Python Book"
+             accesskey="P">previous</a> |</li>
+          <li><img src="_static/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">Alex's Python Book  documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Installing Python</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installing-python">
+<h1>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h1>
+<p><strong>Python and a Text Editor</strong></p>
+<p>You can download Python for free from <a class="reference external" href="https://www.python.org/downloads/">Python.org</a>.  Just go to the Python website and find the version for your operating system.   Once you have properly installed Python you should be able to confirm that it is working by checking the version from the command line as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">Python</span> <span class="mf">3.9.5</span>
+</pre></div>
+</div>
+<p><strong>Editors</strong></p>
+<p>With Python installed, you can write your code in any text editor and run it from the command line.</p>
+<p>I like the <a class="reference external" href="https://www.sublimetext.com/">Sublime Text</a> editor.  There are many others.  Here are some popular ones you can try:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.vim.org/">VIM</a></p></li>
+<li><p><a class="reference external" href="https://www.gnu.org/software/emacs/">EMACS</a></p></li>
+<li><p><a class="reference external" href="https://atom.io/">Atom</a></p></li>
+<li><p><a class="reference external" href="https://notepad-plus-plus.org/downloads/">Notepad_plus_plus</a></p></li>
+</ul>
+<p><strong>Integrated Development Environments (IDEs)</strong></p>
+<p>You can also run Python using other free IDE’s.   I recommend the following:</p>
+<ul class="simple">
+<li><p>IDLE (comes with Python)</p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/pycharm/">Pycharm</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a></p></li>
+<li><p>Spyder (comes with <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>)</p></li>
+</ul>
+<p>You can follow the links to find information on downloading and using each one.</p>
+<p>You can even run Python with nothing but your favorite browser at <a class="reference external" href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
+<p>Another popular way to run Python is using Jupyter notebooks.  A Jupyter notebook provides the user with an interactive environment that allows him to integrate text, code, and data. Jupyter notebooks are available with the Anaconda distribution of Python.  There is a free open-source version called the Anaconda Individual Edition.   It includes Python, Jupyter notebooks, and the Spyder IDE.   The link provided above will take you to a page where you can download the Anaconda Individual Edition.</p>
+<p>As you work through the book you should have a way to write and run Python code.   If you make an effort to run my examples, try the exercises, and experiment on your own you will learn Python quickly.</p>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Math.html">Basic Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables%20and%20Basic%20Data%20Types.html">Variables and Basic Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Boolean%20and%20Comparison%20Operators.html">Boolean and Comparison Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Operators.html">Other Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditional%20Statements.html">Conditional Statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comprehension.html">Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Generators.html">Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">Exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Built-in%20Libraries.html">The Python Standard Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html">Third-party Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Third-party%20Libraries.html#id1">Pygame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Python%20Books.html">Other Python Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other%20Stuff.html">Other Stuff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Installing Python.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Basic%20Math.html" title="Basic Math"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Alex’s Python Book"
+             >previous</a> |</li>
+          <li><img src="_static/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">Alex's Python Book  documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Installing Python</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="copyright.html">Copyright</a> 2021, Alex Ambrioso.
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    See <a href="">History and License</a> for more information.
+    <br /><br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+
+    Last updated on None.
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+
+  </body>
+</html>

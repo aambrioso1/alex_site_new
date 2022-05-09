@@ -1,0 +1,106 @@
+The Python Standard Library
+===========================
+
+Python includes a broad range of modules for performing common programming tasks like working with mathematical operations, generating random numbers, interacting with the operating system, and reading and writing to files.  These modules are found in the  `standard library <https://docs.python.org/3/library/>`_ which is distributed with Python.
+
+To use one of these modules use the `import` command as follows:
+
+.. code::
+
+ import module_name
+
+Once the module is imported you can use the module's attributes and methods with a dot operator like this:
+
+.. code::
+
+ module_name.attribute
+ module_name.method(arguments)
+
+Here are some examples from modules found in the standard library.
+
+math
+----
+
+The `math <https://docs.python.org/3/library/math.html>`_ provides mathematical functions based on those found in C.
+
+Here are some examples:
+
+.. code::
+
+ >>> import math
+ >>> math.sqrt(5) # The square root function
+ 2.23606797749979
+ >>> pi = math.pi
+ >>> pi
+ 3.141592653589793
+ >>> math.cos(pi/4)
+ 0.7071067811865476
+
+random
+------
+
+The `random <https://docs.python.org/3/library/random.html>`_ module can be used to generate random numbers and operations.
+
+.. code::
+
+>>> import random
+>>> random.random() # generates a random float in [0.0, 1.0)
+0.5582391505231478
+>>> random.randint(1,100) # generates a random integer between 1 and 100.
+81
+>>> random.randrange(2) # generates a 0 or 1 at random
+0
+>>> random.randrange(2)
+1
+>>> random.randrange(2)
+1
+>>> random.choice('abcdefghijklmnopqrstuvwxyz') # choose a random element from the sequence
+'i'
+>>>
+>>> random.choice('abcdefghijklmnopqrstuvwxyz')
+'v'
+>>> random.choices(['a', 'b', 'c', 'd', 'e'], k=2) # randomly choose k items
+['c', 'a']
+>>> random.choices(['a', 'b', 'c', 'd', 'e'], k=3)
+['d', 'd', 'c']
+>>> lst = ['a', 'b', 'c', 'd', 'e']
+>>> lst
+['a', 'b', 'c', 'd', 'e']
+>>> random.shuffle(lst) # randomly shuffles the sequence in place.
+>>> lst
+['d', 'c', 'b', 'e', 'a']
+
+
+os
+--
+
+sys
+---
+
+
+collections
+-----------
+
+
+re (regular expressions)
+------------------------
+
+Decimals
+--------
+
+Fractions
+---------
+
+itertools
+---------
+* See https://docs.python.org/3/library/itertools.html.
+* For permutation method see https://docs.python.org/3/library/itertools.html#itertools.permutations
+* count
+* repeat
+* cycle
+* islice
+* dropwhile
+* starmap
+* filterfalse
+* chain
+* takewhile
