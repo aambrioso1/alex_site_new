@@ -37,6 +37,7 @@ def blog():
 	# return '<html><a href="http://alexambrioso.com">Go to Alex's Blog</a></html>'
 """
 
+# Redo this root for presentations:  https://github.com/aambrioso1/presentations
 @app.route('/desmos')
 def desmos():
 	return render_template('desmos.html')
