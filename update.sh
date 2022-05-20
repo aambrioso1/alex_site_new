@@ -5,6 +5,7 @@
 
 #Consider adding commands to navigate to the correct directory
 #cd /apps/alex_site_new
+#Why is log file coming up when I execute this shell script?
 git pull
 systemctl stop alex_site_new
 systemctl start alex_site_new
